@@ -7,12 +7,59 @@
     android:orientation="vertical"
     tools:context=".MainActivity">
 
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/image_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:src="@drawable/ic_leon" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/image_id2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:src="@drawable/ic_leon" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/image_id3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:src="@drawable/ic_leon" />
+
+
+
+    </LinearLayout>
 
     <androidx.appcompat.widget.AppCompatImageView
-        android:id="@+id/image_id"
-        tools:src="@drawable/ic_leon"
+        android:id="@+id/image_id6"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"/>
+        android:layout_height="wrap_content"
+        tools:src="@drawable/ic_leon" />
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/image_id7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:src="@drawable/ic_leon" />
+
+
+
+    <TextView
+        android:layout_marginTop="20dp"
+        android:text="@string/name_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/teal_200"
+        android:textSize="20sp"/>
+
+
+
+
+
+
+
 
 
 </LinearLayout>
