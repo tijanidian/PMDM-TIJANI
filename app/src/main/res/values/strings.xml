@@ -1,4 +1,8 @@
 <resources>
     <string name="app_name">PMPD-PlayGround</string>
     <string name="name_image">Nombre de la imagen</string>
+    <string name="name_img_netf_1">YOU</string>
+    <string name="desc_img_netf_1">2 epísodios| 1.5 GB</string>
+    <string name="name_img_netf_2">The umbrella Academy</string>
+    <string name="desc_img_netf_2">3 epísodios| 1.7 GB</string>
 </resources>
