@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/greey">
+
+<androidx.appcompat.widget.LinearLayoutCompat
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:orientation="horizontal"
+    android:background="@color/black">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:text="prueba"
+        android:textColor="@color/white"/>
+
+</androidx.appcompat.widget.LinearLayoutCompat>
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/img1"
+        android:paddingTop="50dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:src="@tools:sample/avatars"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/text_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_toEndOf="@id/img1"
+        android:paddingTop="75dp"
+        android:paddingLeft="20dp"
+        android:textColor="@color/white"
+        android:text="@string/name_img_netf_1" />
+    <TextView
+        android:id="@+id/text_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_toEndOf="@id/img1"
+        android:paddingTop="5dp"
+        android:paddingLeft="20dp"
+        android:layout_below="@id/text_1"
+        android:textColor="@color/white"
+        android:text="@string/desc_img_netf_1" />
+
+    <Button
+        android:id="@+id/button_netf_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="75dp"
+        android:layout_alignRight="@+id/text_1"
+        />
+
+
+
+</RelativeLayout>
