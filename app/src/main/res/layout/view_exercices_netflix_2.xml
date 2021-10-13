@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+
+    <!-- primera fili-->
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/black"
+        android:orientation="horizontal">
+
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/img_1"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            tools:src="@tools:sample/avatars" />
+
+        <TextView
+            android:paddingLeft="30dp"
+            android:textColor="@color/white"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="Programas" />
+
+        <TextView
+            android:textColor="@color/white"
+            android:paddingStart="30dp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="Películas" />
+
+        <TextView
+            android:textColor="@color/white"
+            android:paddingStart="30dp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="Mi lista" />
+
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <!--Segunda fila-->
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/text_3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Populares en Netflix" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/img_2"
+            android:layout_width="58dp"
+            android:layout_height="58dp"
+            android:layout_below="@id/text_3"
+            tools:src="@tools:sample/avatars" />
+
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/img_3"
+            android:layout_width="58dp"
+            android:layout_height="58dp"
+            android:layout_below="@id/text_3"
+            android:layout_toRightOf="@id/img_2"
+            tools:src="@tools:sample/avatars" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/img_4"
+            android:layout_width="58dp"
+            android:layout_height="58dp"
+            android:layout_below="@id/text_3"
+            android:layout_toRightOf="@id/img_3"
+            tools:src="@tools:sample/avatars" />
+
+    </RelativeLayout>
+
+
+    <!--Tercera fila-->
+
+
+
+
+        <TextView
+            android:id="@+id/text_4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tendencias" />
+
+
+
+
+
+
+
+</androidx.appcompat.widget.LinearLayoutCompat>
