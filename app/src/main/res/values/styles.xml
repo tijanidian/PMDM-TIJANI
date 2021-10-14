@@ -1,8 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+
     <style name="AvatarView">
         <item name="android:layout_width">@dimen/thumbnails_width</item>
         <item name="android:layout_height">@dimen/thumbnails_height</item>
+    </style>
+
+    <style name="AvatarView2">
+        <item name="android:layout_width">@dimen/thumbnails_width</item>
+        <item name="android:layout_height">@dimen/thumbnails_height</item>
+    </style>
+
+    <style name="IconView">
+        <item name="android:layout_width">@dimen/icon_height</item>
+        <item name="android:layout_height">@dimen/icon_width</item>
+        <item name="android:layout_marginLeft">15dp</item>
+        <item name="android:layout_marginRight">15dp</item>
     </style>
 
     <style name="TittleView">

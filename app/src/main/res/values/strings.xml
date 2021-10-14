@@ -5,4 +5,11 @@
     <string name="desc_img_netf_1">2 epísodios| 1.5 GB</string>
     <string name="name_img_netf_2">The umbrella Academy</string>
     <string name="desc_img_netf_2">3 epísodios| 1.7 GB</string>
+
+    <string name="name_img_netf_3">ÉLITE</string>
+    <string name="desc_img_netf_3">4 episodios| 2.3 GB</string>
+
+    <string name="name_img_netf_4">Los hermanos Willoughby</string>
+    <string name="desc_img_netf_4">1 h 32 min| 1 GB</string>
+
 </resources>
