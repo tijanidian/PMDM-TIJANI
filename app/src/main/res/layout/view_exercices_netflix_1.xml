@@ -40,8 +40,7 @@
 
             <androidx.appcompat.widget.AppCompatImageView
                 android:id="@+id/img4"
-                android:layout_width="32dp"
-                android:layout_height="32dp"
+                style="@style/IconView"
                 android:layout_alignParentEnd="true"
                 android:paddingLeft="10dp"
                 android:src="@drawable/ic_pen"
@@ -51,7 +50,9 @@
 
     </androidx.appcompat.widget.LinearLayoutCompat>
 
+    <!--Primera Fila-->
     <RelativeLayout
+        android:id="@+id/Relative_view_1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@id/view_header">
@@ -83,9 +84,8 @@
             android:textColor="@color/white" />
 
         <androidx.appcompat.widget.AppCompatImageView
-            android:id="@+id/img2"
-            android:layout_width="32dp"
-            android:layout_height="32dp"
+            android:id="@+id/img_row1"
+            style="@style/IconView"
             android:layout_alignParentEnd="true"
             android:layout_centerVertical="true"
             android:src="@drawable/ic_arrow"
@@ -93,66 +93,180 @@
 
     </RelativeLayout>
 
-      <!-- Segunda Fila-->
+    <!-- Segunda Fila-->
+    <RelativeLayout
+        android:id="@+id/Relative_view_2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="25dp"
+        android:layout_below="@id/Relative_view_1">
 
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/film_image_row_2"
+            style="@style/AvatarView"
+            android:scaleType="centerCrop"
+            android:src="@drawable/umbrella_academy"
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:id="@+id/film_text1_row_2"
+            style="@style/TittleView"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/film_image_row_2"
+            tools:text="@string/name_img_netf_2" />
+
+        <TextView
+            android:id="@+id/film_text2_row_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/film_text1_row_2"
+            android:layout_marginLeft="16dp"
+            android:layout_toEndOf="@id/film_image_row_2"
+            android:text="@string/desc_img_netf_2"
+            android:textColor="@color/white" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/img_row2"
+            style="@style/IconView"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic_arrow"
+            tools:ignore="MissingConstraints" />
+
+    </RelativeLayout>
 
     <!-- Tercera Fila-->
+    <RelativeLayout
+        android:paddingTop="25dp"
+        android:id="@+id/Relative_view_3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Relative_view_2">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/film_image_row_3"
+            style="@style/AvatarView"
+            android:scaleType="centerCrop"
+            android:src="@drawable/you"
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:id="@+id/film_text1_row_3"
+            style="@style/TittleView"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/film_image_row_3"
+            tools:text="@string/name_img_netf_3" />
+
+        <TextView
+            android:id="@+id/film_text2_row_3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/film_text1_row_3"
+            android:layout_marginLeft="16dp"
+            android:layout_toEndOf="@id/film_image_row_3"
+            android:text="@string/desc_img_netf_3"
+            android:textColor="@color/white" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/img_row3"
+            style="@style/IconView"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic_watch_later_black_24dp"
+            tools:ignore="MissingConstraints" />
+
+    </RelativeLayout>
 
 
+    <!--Cuarta fila-->
+
+    <RelativeLayout
+        android:paddingTop="25dp"
+        android:id="@+id/Relative_view_4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Relative_view_3">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/film_image_row_4"
+            style="@style/AvatarView"
+            android:scaleType="centerCrop"
+            android:src="@drawable/you"
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:id="@+id/film_text1_row_4"
+            style="@style/TittleView"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/film_image_row_4"
+            tools:text="@string/name_img_netf_4" />
+
+        <TextView
+            android:id="@+id/film_text2_row_4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/film_text1_row_4"
+            android:layout_marginLeft="16dp"
+            android:layout_toEndOf="@id/film_image_row_4"
+            android:text="@string/desc_img_netf_4"
+            android:textColor="@color/white" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/img_row4"
+            style="@style/IconView"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic_mobile_friendly_black_24dp"
+            tools:ignore="MissingConstraints" />
+
+    </RelativeLayout>
 
     <!--Botones-->
 
 
     <androidx.appcompat.widget.LinearLayoutCompat
         android:layout_width="match_parent"
-        android:layout_height="50dp"
+        android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
         android:background="@color/black"
         android:orientation="horizontal">
 
 
         <androidx.appcompat.widget.AppCompatImageView
-            android:id="@+id/img11"
-            android:layout_width="48dp"
-            android:layout_height="48dp"
-            android:layout_alignParentBottom="true"
-            android:layout_marginStart="25dp"
+            android:id="@+id/img_button1"
+            style="@style/IconView"
             android:src="@drawable/ic_home_black_24dp"
             tools:ignore="MissingConstraints" />
 
         <androidx.appcompat.widget.AppCompatImageView
-            android:id="@+id/img12"
-            android:layout_width="48dp"
-            android:layout_height="48dp"
-            android:layout_alignParentBottom="true"
-            android:layout_marginStart="30dp"
+            android:id="@+id/img_button2"
+            style="@style/IconView"
             android:src="@drawable/ic_search_black_24dp"
             tools:ignore="MissingConstraints" />
 
         <androidx.appcompat.widget.AppCompatImageView
-            android:id="@+id/img13"
-            android:layout_width="48dp"
-            android:layout_height="48dp"
-            android:layout_alignParentBottom="true"
-            android:layout_marginStart="30dp"
+            android:id="@+id/img_button3"
+            style="@style/IconView"
             android:src="@drawable/ic_play_black_24dp"
             tools:ignore="MissingConstraints" />
 
         <androidx.appcompat.widget.AppCompatImageView
-            android:id="@+id/img14"
-            android:layout_width="48dp"
-            android:layout_height="48dp"
-            android:layout_alignParentBottom="true"
-            android:layout_marginStart="30dp"
+            android:id="@+id/img_button4"
+            style="@style/IconView"
             android:src="@drawable/ic_file_download_black_24dp"
             tools:ignore="MissingConstraints" />
 
         <androidx.appcompat.widget.AppCompatImageView
-            android:id="@+id/img15"
-            android:layout_width="48dp"
-            android:layout_height="48dp"
-            android:layout_alignParentBottom="true"
-            android:layout_marginStart="25dp"
+            android:id="@+id/img_button5"
+            style="@style/IconView"
             android:src="@drawable/ic_stack_black_24dp"
             tools:ignore="MissingConstraints" />
 
