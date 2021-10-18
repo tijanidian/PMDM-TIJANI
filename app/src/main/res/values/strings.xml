@@ -12,4 +12,17 @@
     <string name="name_img_netf_4">Los hermanos Willoughby</string>
     <string name="desc_img_netf_4">1 h 32 min| 1 GB</string>
 
+    <!--Top Banner-->
+    <string name="name_auto_download">Auto Descaga</string>
+    <string name="name_activity">Activada</string>
+
+    <string name="text_top_banner_1">Programas</string>
+    <string name="text_top_banner_2">Películas</string>
+    <string name="text_top_banner_3">Mi Lista</string>
+
+    <string name="text_row1">Populares en Netflix</string>
+    <string name="text_row2">Tendencia</string>
+    <string name="text_row3">Verlo nuevamente</string>
+
+
 </resources>
