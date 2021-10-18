@@ -12,6 +12,8 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@color/black"
+        android:gravity="center"
+
         android:orientation="horizontal"
         android:paddingLeft="10dp"
         android:paddingTop="10dp">
@@ -19,29 +21,28 @@
 
         <androidx.appcompat.widget.AppCompatImageView
             android:id="@+id/img_1"
-            android:layout_width="48dp"
-            android:layout_height="48dp"
+            style="@style/IconView"
             tools:src="@tools:sample/avatars" />
 
         <TextView
+            style="@style/IconView"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
-            android:paddingLeft="30dp"
-            android:text="Programas"
+            android:text="@string/text_top_banner_1"
             android:textColor="@color/white" />
 
         <TextView
+            style="@style/IconView"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
-            android:paddingStart="30dp"
-            android:text="Películas"
+            android:text="@string/text_top_banner_2"
             android:textColor="@color/white" />
 
         <TextView
+            style="@style/IconView"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
-            android:paddingStart="30dp"
-            android:text="Mi lista"
+            android:text="@string/text_top_banner_3"
             android:textColor="@color/white" />
 
 
@@ -60,21 +61,19 @@
             android:layout_height="wrap_content"
             android:paddingLeft="15dp"
             android:paddingTop="15dp"
-            android:text="Populares en Netflix"
+            android:text="@string/text_row1"
             android:textColor="@color/white" />
 
         <androidx.appcompat.widget.AppCompatImageView
             android:id="@+id/img1_row1"
             style="@style/AvatarView"
             android:layout_below="@id/film_text1_row_1"
-            android:layout_marginStart="15dp"
             tools:src="@tools:sample/avatars" />
 
         <androidx.appcompat.widget.AppCompatImageView
             android:id="@+id/img2_row1"
             style="@style/AvatarView"
             android:layout_below="@id/film_text1_row_1"
-            android:layout_marginStart="15dp"
             android:layout_toRightOf="@id/img1_row1"
             tools:src="@tools:sample/avatars" />
 
@@ -82,17 +81,17 @@
             android:id="@+id/img3_row1"
             style="@style/AvatarView"
             android:layout_below="@id/film_text1_row_1"
-            android:layout_marginStart="15dp"
-            android:layout_toRightOf="@id/img2_row1"
+
+            android:layout_toEndOf="@id/img2_row1"
             tools:src="@tools:sample/avatars" />
 
     </RelativeLayout>
 
     <RelativeLayout
-        android:layout_below="@id/Relative_view_1"
         android:id="@+id/Relative_view_2"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Relative_view_1">
 
         <TextView
             android:id="@+id/film_text1_row_2"
@@ -100,39 +99,39 @@
             android:layout_height="wrap_content"
             android:paddingLeft="10dp"
             android:paddingTop="15dp"
-            android:textColor="@color/white"
-            android:text="Tendencias" />
+            android:text="@string/text_row2"
+            android:textColor="@color/white" />
 
         <androidx.appcompat.widget.AppCompatImageView
             android:id="@+id/img1_row2"
             style="@style/AvatarView"
-            android:layout_marginStart="15dp"
             android:layout_below="@id/film_text1_row_2"
+            android:layout_marginStart="15dp"
             tools:src="@tools:sample/avatars" />
 
         <androidx.appcompat.widget.AppCompatImageView
             android:id="@+id/img2_row2"
             style="@style/AvatarView"
-            android:layout_marginStart="15dp"
             android:layout_below="@id/film_text1_row_2"
-            android:layout_toRightOf="@id/img1_row2"
+            android:layout_marginStart="15dp"
+            android:layout_toEndOf="@id/img1_row2"
             tools:src="@tools:sample/avatars" />
 
         <androidx.appcompat.widget.AppCompatImageView
             android:id="@+id/img3_row2"
             style="@style/AvatarView"
-            android:layout_marginStart="15dp"
             android:layout_below="@id/film_text1_row_2"
-            android:layout_toRightOf="@id/img2_row2"
+            android:layout_marginStart="15dp"
+            android:layout_toEndOf="@id/img2_row2"
             tools:src="@tools:sample/avatars" />
 
     </RelativeLayout>
 
     <RelativeLayout
-        android:layout_below="@id/Relative_view_2"
         android:id="@+id/Relative_view_3"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Relative_view_2">
 
         <TextView
             android:id="@+id/film_text1_row_3"
@@ -140,30 +139,30 @@
             android:layout_height="wrap_content"
             android:paddingLeft="10dp"
             android:paddingTop="15dp"
-            android:textColor="@color/white"
-            android:text="Verlo nuevamente" />
+            android:text="@string/text_row3"
+            android:textColor="@color/white" />
 
         <androidx.appcompat.widget.AppCompatImageView
             android:id="@+id/img1_row3"
             style="@style/AvatarView"
-            android:layout_marginStart="15dp"
             android:layout_below="@id/film_text1_row_3"
+            android:layout_marginStart="15dp"
             tools:src="@tools:sample/avatars" />
 
         <androidx.appcompat.widget.AppCompatImageView
             android:id="@+id/img2_row3"
             style="@style/AvatarView"
-            android:layout_marginStart="15dp"
             android:layout_below="@id/film_text1_row_3"
-            android:layout_toRightOf="@id/img1_row3"
+            android:layout_marginStart="15dp"
+            android:layout_toEndOf="@id/img1_row3"
             tools:src="@tools:sample/avatars" />
 
         <androidx.appcompat.widget.AppCompatImageView
             android:id="@+id/img3_row3"
             style="@style/AvatarView"
-            android:layout_marginStart="15dp"
             android:layout_below="@id/film_text1_row_3"
-            android:layout_toRightOf="@id/img2_row3"
+            android:layout_marginStart="15dp"
+            android:layout_toEndOf="@id/img2_row3"
             tools:src="@tools:sample/avatars" />
 
     </RelativeLayout>
@@ -210,9 +209,6 @@
 
 
     </androidx.appcompat.widget.LinearLayoutCompat>
-
-
-
 
 
 </RelativeLayout>
