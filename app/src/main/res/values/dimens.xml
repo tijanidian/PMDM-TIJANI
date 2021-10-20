@@ -16,6 +16,12 @@
     <!--Margin size-->
     <dimen name="margin_left">16dp</dimen>
 
+    <!--Margin size-->
+    <dimen name="padding_left">16dp</dimen>
+
+    <!--top padding-->
+    <dimen name="padding_top">16dp</dimen>
+
     <!--Text Size-->
     <dimen name="text_size_title">18sp</dimen>
     <dimen name="text_size_big">20sp</dimen>
