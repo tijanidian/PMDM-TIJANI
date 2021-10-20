@@ -13,10 +13,9 @@
         android:layout_height="wrap_content"
         android:background="@color/black"
         android:gravity="center"
-
         android:orientation="horizontal"
-        android:paddingLeft="10dp"
-        android:paddingTop="10dp">
+        android:paddingStart="@dimen/margin_left"
+        android:paddingTop="@dimen/padding_top">
 
 
         <androidx.appcompat.widget.AppCompatImageView
@@ -28,6 +27,7 @@
             style="@style/IconView"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
+            android:paddingLeft="@dimen/padding_left"
             android:text="@string/text_top_banner_1"
             android:textColor="@color/white" />
 
@@ -59,8 +59,8 @@
             android:id="@+id/film_text1_row_1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:paddingLeft="15dp"
-            android:paddingTop="15dp"
+            android:paddingStart="@dimen/padding_left"
+            android:paddingTop="@dimen/padding_top"
             android:text="@string/text_row1"
             android:textColor="@color/white" />
 
@@ -97,8 +97,8 @@
             android:id="@+id/film_text1_row_2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:paddingLeft="10dp"
-            android:paddingTop="15dp"
+            android:paddingLeft="@dimen/padding_left"
+            android:paddingTop="@dimen/padding_top"
             android:text="@string/text_row2"
             android:textColor="@color/white" />
 
@@ -122,7 +122,7 @@
             style="@style/AvatarView"
             android:layout_below="@id/film_text1_row_2"
             android:layout_marginStart="15dp"
-            android:layout_toEndOf="@id/img2_row2"
+            android:layout_toRightOf="@id/img2_row2"
             tools:src="@tools:sample/avatars" />
 
     </RelativeLayout>
@@ -137,8 +137,8 @@
             android:id="@+id/film_text1_row_3"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:paddingLeft="10dp"
-            android:paddingTop="15dp"
+            android:paddingLeft="@dimen/padding_left"
+            android:paddingTop="@dimen/padding_top"
             android:text="@string/text_row3"
             android:textColor="@color/white" />
 
@@ -146,14 +146,12 @@
             android:id="@+id/img1_row3"
             style="@style/AvatarView"
             android:layout_below="@id/film_text1_row_3"
-            android:layout_marginStart="15dp"
             tools:src="@tools:sample/avatars" />
 
         <androidx.appcompat.widget.AppCompatImageView
             android:id="@+id/img2_row3"
             style="@style/AvatarView"
             android:layout_below="@id/film_text1_row_3"
-            android:layout_marginStart="15dp"
             android:layout_toEndOf="@id/img1_row3"
             tools:src="@tools:sample/avatars" />
 
@@ -161,7 +159,6 @@
             android:id="@+id/img3_row3"
             style="@style/AvatarView"
             android:layout_below="@id/film_text1_row_3"
-            android:layout_marginStart="15dp"
             android:layout_toEndOf="@id/img2_row3"
             tools:src="@tools:sample/avatars" />
 
