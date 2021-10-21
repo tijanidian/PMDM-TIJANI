@@ -1,44 +1,75 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:gravity="center">
+    android:layout_height="150dp">
 
-
-    <RelativeLayout
+    <androidx.appcompat.widget.AppCompatImageView
+        
         android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerHorizontal="true"
+        android:scaleType="centerCrop"
+        android:src="@mipmap/ic_macdonals" />
+
+    <TextView
+        android:id="@+id/text_logo_top1"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:background="@color/black">
+        android:textSize="32sp"
+        android:layout_centerHorizontal="true"
+        android:text="McDonald's"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:textColor="@color/white" />
+
+    <TextView
+        android:id="@+id/text_logo_top2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text_logo_top1"
+        android:layout_centerHorizontal="true"
+        android:paddingTop="5dp"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:text="Las más famosas"
+        android:textColor="@color/white"
+        android:textSize="16sp" />
 
 
-        <androidx.appcompat.widget.AppCompatImageView
-            android:layout_width="match_parent"
-            android:layout_height="150dp"
-            android:layout_centerHorizontal="true"
-            android:scaleType="centerCrop"
-            android:src="@mipmap/ic_macdonals" />
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/text_logo_top3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:src="@drawable/ic_electric_moped_black_24dp" />
 
-        <TextView
-            android:id="@+id/text_logo_top1"
-            android:layout_width="wrap_content"
-            android:layout_height="25dp"
-            android:layout_centerHorizontal="true"
-            android:text="Mc Donals"
-            android:textColor="@color/white" />
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="25dp"
-            android:layout_below="@+id/text_logo_top1"
-            android:layout_centerHorizontal="true"
-            android:paddingTop="10dp"
-            android:text="Las más famoas"
-            android:layout_alignParentStart="true"
-
-            android:textColor="@color/white" />
+    <TextView
+        android:id="@+id/text_logo_top4"
+        android:layout_width="wrap_content"
+        android:layout_height="25dp"
+        android:layout_alignParentBottom="true"
+        android:layout_toEndOf="@id/text_logo_top3"
+        android:textColor="@color/white"
+        tools:text="2,50€" />
 
 
-    </RelativeLayout>
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/text_logo_top5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:src="@drawable/ic_watch_later_white_24dp" />
+    <TextView
+        android:id="@+id/text_logo_top6"
+        android:layout_width="wrap_content"
+        android:layout_height="25dp"
+        android:layout_alignParentBottom="true"
+        android:layout_toStartOf="@id/text_logo_top5"
+        android:textColor="@color/white"
+        tools:text="20-25 min" />
+
+
+
 
 
 </RelativeLayout>
