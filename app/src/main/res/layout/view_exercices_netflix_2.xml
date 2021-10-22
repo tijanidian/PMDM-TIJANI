@@ -24,24 +24,26 @@
             tools:src="@tools:sample/avatars" />
 
         <TextView
-            style="@style/IconView"
+            style="@style/TittleView"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
-            android:paddingLeft="@dimen/padding_left"
+            android:layout_marginStart="@dimen/margin_left"
             android:text="@string/text_top_banner_1"
             android:textColor="@color/white" />
 
         <TextView
-            style="@style/IconView"
+            style="@style/TittleView"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
+            android:layout_marginStart="@dimen/margin_left"
             android:text="@string/text_top_banner_2"
             android:textColor="@color/white" />
 
         <TextView
-            style="@style/IconView"
+            style="@style/TittleView"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
+            android:layout_marginStart="@dimen/margin_left"
             android:text="@string/text_top_banner_3"
             android:textColor="@color/white" />
 
@@ -59,7 +61,7 @@
             android:id="@+id/film_text1_row_1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:paddingStart="@dimen/padding_left"
+            android:layout_marginStart="@dimen/margin_left"
             android:paddingTop="@dimen/padding_top"
             android:text="@string/text_row1"
             android:textColor="@color/white" />
@@ -67,12 +69,16 @@
         <androidx.appcompat.widget.AppCompatImageView
             android:id="@+id/img1_row1"
             style="@style/AvatarView"
+            android:layout_marginStart="@dimen/margin_Left_Icon"
+            android:layout_marginEnd="@dimen/margin_Right_Icon"
             android:layout_below="@id/film_text1_row_1"
             tools:src="@tools:sample/avatars" />
 
         <androidx.appcompat.widget.AppCompatImageView
             android:id="@+id/img2_row1"
             style="@style/AvatarView"
+            android:layout_marginStart="@dimen/margin_Left_Icon"
+            android:layout_marginEnd="@dimen/margin_Right_Icon"
             android:layout_below="@id/film_text1_row_1"
             android:layout_toRightOf="@id/img1_row1"
             tools:src="@tools:sample/avatars" />
@@ -81,7 +87,8 @@
             android:id="@+id/img3_row1"
             style="@style/AvatarView"
             android:layout_below="@id/film_text1_row_1"
-
+            android:layout_marginStart="@dimen/margin_Left_Icon"
+            android:layout_marginEnd="@dimen/margin_Right_Icon"
             android:layout_toEndOf="@id/img2_row1"
             tools:src="@tools:sample/avatars" />
 
@@ -97,7 +104,7 @@
             android:id="@+id/film_text1_row_2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:paddingLeft="@dimen/padding_left"
+            android:layout_marginStart="@dimen/margin_left"
             android:paddingTop="@dimen/padding_top"
             android:text="@string/text_row2"
             android:textColor="@color/white" />
@@ -106,24 +113,28 @@
             android:id="@+id/img1_row2"
             style="@style/AvatarView"
             android:layout_below="@id/film_text1_row_2"
-            android:layout_marginStart="15dp"
-            tools:src="@tools:sample/avatars" />
+            tools:src="@tools:sample/avatars"
+            android:layout_marginStart="@dimen/margin_Left_Icon"
+            android:layout_marginEnd="@dimen/margin_Right_Icon"
+            />
 
         <androidx.appcompat.widget.AppCompatImageView
             android:id="@+id/img2_row2"
             style="@style/AvatarView"
             android:layout_below="@id/film_text1_row_2"
-            android:layout_marginStart="15dp"
             android:layout_toEndOf="@id/img1_row2"
-            tools:src="@tools:sample/avatars" />
+            tools:src="@tools:sample/avatars"
+            android:layout_marginStart="@dimen/margin_Left_Icon"
+            android:layout_marginEnd="@dimen/margin_Right_Icon"/>
 
         <androidx.appcompat.widget.AppCompatImageView
             android:id="@+id/img3_row2"
             style="@style/AvatarView"
             android:layout_below="@id/film_text1_row_2"
-            android:layout_marginStart="15dp"
             android:layout_toRightOf="@id/img2_row2"
-            tools:src="@tools:sample/avatars" />
+            tools:src="@tools:sample/avatars"
+            android:layout_marginStart="@dimen/margin_Left_Icon"
+            android:layout_marginEnd="@dimen/margin_Right_Icon"/>
 
     </RelativeLayout>
 
@@ -137,7 +148,7 @@
             android:id="@+id/film_text1_row_3"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:paddingLeft="@dimen/padding_left"
+            android:layout_marginStart="@dimen/margin_left"
             android:paddingTop="@dimen/padding_top"
             android:text="@string/text_row3"
             android:textColor="@color/white" />
@@ -146,21 +157,28 @@
             android:id="@+id/img1_row3"
             style="@style/AvatarView"
             android:layout_below="@id/film_text1_row_3"
-            tools:src="@tools:sample/avatars" />
+            tools:src="@tools:sample/avatars"
+            android:layout_marginStart="@dimen/margin_Left_Icon"
+            android:layout_marginEnd="@dimen/margin_Right_Icon"
+            />
 
         <androidx.appcompat.widget.AppCompatImageView
             android:id="@+id/img2_row3"
             style="@style/AvatarView"
             android:layout_below="@id/film_text1_row_3"
             android:layout_toEndOf="@id/img1_row3"
-            tools:src="@tools:sample/avatars" />
+            tools:src="@tools:sample/avatars"
+            android:layout_marginStart="@dimen/margin_Left_Icon"
+            android:layout_marginEnd="@dimen/margin_Right_Icon"/>
 
         <androidx.appcompat.widget.AppCompatImageView
             android:id="@+id/img3_row3"
             style="@style/AvatarView"
             android:layout_below="@id/film_text1_row_3"
             android:layout_toEndOf="@id/img2_row3"
-            tools:src="@tools:sample/avatars" />
+            tools:src="@tools:sample/avatars"
+            android:layout_marginStart="@dimen/margin_Left_Icon"
+            android:layout_marginEnd="@dimen/margin_Right_Icon"/>
 
     </RelativeLayout>
 
@@ -177,30 +195,40 @@
         <androidx.appcompat.widget.AppCompatImageView
             android:id="@+id/img_button1"
             style="@style/IconView"
+            android:layout_marginStart="@dimen/button_icon_left"
+            android:layout_marginEnd="@dimen/button_icon_right"
             android:src="@drawable/ic_home_black_24dp"
             tools:ignore="MissingConstraints" />
 
         <androidx.appcompat.widget.AppCompatImageView
             android:id="@+id/img_button2"
             style="@style/IconView"
+            android:layout_marginStart="@dimen/button_icon_left"
+            android:layout_marginEnd="@dimen/button_icon_right"
             android:src="@drawable/ic_search_black_24dp"
             tools:ignore="MissingConstraints" />
 
         <androidx.appcompat.widget.AppCompatImageView
             android:id="@+id/img_button3"
             style="@style/IconView"
+            android:layout_marginStart="@dimen/button_icon_left"
+            android:layout_marginEnd="@dimen/button_icon_right"
             android:src="@drawable/ic_play_black_24dp"
             tools:ignore="MissingConstraints" />
 
         <androidx.appcompat.widget.AppCompatImageView
             android:id="@+id/img_button4"
             style="@style/IconView"
+            android:layout_marginStart="@dimen/button_icon_left"
+            android:layout_marginEnd="@dimen/button_icon_right"
             android:src="@drawable/ic_file_download_black_24dp"
             tools:ignore="MissingConstraints" />
 
         <androidx.appcompat.widget.AppCompatImageView
             android:id="@+id/img_button5"
             style="@style/IconView"
+            android:layout_marginStart="@dimen/button_icon_left"
+            android:layout_marginEnd="@dimen/button_icon_right"
             android:src="@drawable/ic_stack_black_24dp"
             tools:ignore="MissingConstraints" />
 
