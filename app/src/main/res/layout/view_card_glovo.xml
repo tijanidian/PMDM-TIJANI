@@ -2,71 +2,74 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="150dp">
+    android:layout_height="@dimen/max_height">
 
     <androidx.appcompat.widget.AppCompatImageView
-        
+
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_centerHorizontal="true"
         android:scaleType="centerCrop"
-        android:src="@mipmap/ic_macdonals" />
+        android:src="@mipmap/glovo_comida" />
 
     <TextView
         android:id="@+id/text_logo_top1"
+        style="@style/TittleView_glovo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textSize="32sp"
         android:layout_centerHorizontal="true"
-        android:text="McDonald's"
-        android:fontFamily="sans-serif-condensed-medium"
-        android:textColor="@color/white" />
+        android:shadowColor="@color/black"
+        android:text="@string/glovo_principal_text" />
 
     <TextView
         android:id="@+id/text_logo_top2"
+        style="@style/text_glovo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/text_logo_top1"
         android:layout_centerHorizontal="true"
-        android:paddingTop="5dp"
-        android:fontFamily="sans-serif-condensed-medium"
-        android:text="Las más famosas"
-        android:textColor="@color/white"
-        android:textSize="16sp" />
+        android:text="@string/glovo_secundario_text" />
 
 
     <androidx.appcompat.widget.AppCompatImageView
         android:id="@+id/text_logo_top3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        style="@style/IconViewGlovo"
         android:layout_alignParentBottom="true"
         android:src="@drawable/ic_electric_moped_black_24dp" />
 
     <TextView
         android:id="@+id/text_logo_top4"
-        android:layout_width="wrap_content"
-        android:layout_height="25dp"
+        style="@style/text_glovo"
+        android:layout_width="@dimen/text_width_down"
+        android:layout_height="@dimen/text_height_down"
         android:layout_alignParentBottom="true"
         android:layout_toEndOf="@id/text_logo_top3"
-        android:textColor="@color/white"
-        tools:text="2,50€" />
+        tools:text="@string/text_left_icon" />
 
 
     <androidx.appcompat.widget.AppCompatImageView
         android:id="@+id/text_logo_top5"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        style="@style/IconViewGlovo"
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
         android:src="@drawable/ic_watch_later_white_24dp" />
+
     <TextView
         android:id="@+id/text_logo_top6"
-        android:layout_width="wrap_content"
-        android:layout_height="25dp"
+        style="@style/text_glovo"
+        android:layout_width="@dimen/text_width_down"
+        android:layout_height="@dimen/text_height_down"
         android:layout_alignParentBottom="true"
         android:layout_toStartOf="@id/text_logo_top5"
-        android:textColor="@color/white"
-        tools:text="20-25 min" />
+        tools:text="@string/text_right_icon" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/img_logo_glovo"
+        android:layout_width="@dimen/icon_glovo_width"
+        android:layout_height="@dimen/icon_glovo_height"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:src="@drawable/ic_glovo_logo" />
 
 
 
