@@ -28,7 +28,11 @@
     <dimen name="text_size_medium">18sp</dimen>
     <dimen name="text_size_small">16sp</dimen>
 
-    <!--Margin left-->
-    <dimen name="margin_left_medium">16sp</dimen>
+    <!--Maargin left and right icon-->
+    <dimen name="margin_Left_Icon">10dp</dimen>
+    <dimen name="margin_Right_Icon">10dp</dimen>
 
+    <!--Maargin left and right icon-->
+    <dimen name="button_icon_left">10dp</dimen>
+    <dimen name="button_icon_right">10dp</dimen>
 </resources>
