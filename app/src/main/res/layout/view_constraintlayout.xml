@@ -32,7 +32,7 @@
         android:id="@+id/text3"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:background="@color/greey"
+        android:background="@color/black"
         app:layout_constraintLeft_toLeftOf="@id/text2"
         app:layout_constraintTop_toBottomOf="@id/text2"
         app:layout_constraintWidth_percent="0.5"
