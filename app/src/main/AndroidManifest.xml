@@ -9,12 +9,13 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.PMPDPlayGround">
-        <activity
-            android:name="ut3.UiActivity"
-            android:exported="true" />
+
         <activity
             android:name=".MainActivity"
-            android:exported="true">
+            android:exported="true"/>
+        <activity
+            android:name="ut2.UiActivity"
+            android:exported="true" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
