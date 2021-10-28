@@ -67,8 +67,8 @@
         android:id="@+id/img_logo_glovo"
         android:layout_width="@dimen/icon_glovo_width"
         android:layout_height="@dimen/icon_glovo_height"
-        android:layout_centerHorizontal="true"
         android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
         android:src="@drawable/ic_glovo_logo" />
 
 
