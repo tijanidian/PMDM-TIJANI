@@ -1,4 +1,33 @@
 <resources>
     <string name="app_name">PMPD-PlayGround</string>
     <string name="name_image">Nombre de la imagen</string>
+    <string name="name_img_netf_1">YOU</string>
+    <string name="desc_img_netf_1">2 epísodios| 1.5 GB</string>
+    <string name="name_img_netf_2">The umbrella Academy</string>
+    <string name="desc_img_netf_2">3 epísodios| 1.7 GB</string>
+
+    <string name="name_img_netf_3">ÉLITE</string>
+    <string name="desc_img_netf_3">4 episodios| 2.3 GB</string>
+
+    <string name="name_img_netf_4">Los hermanos Willoughby</string>
+    <string name="desc_img_netf_4">1 h 32 min| 1 GB</string>
+
+    <!--Top Banner-->
+    <string name="name_auto_download">Auto Descaga</string>
+    <string name="name_activity">Activada</string>
+
+    <string name="text_top_banner_1">Programas</string>
+    <string name="text_top_banner_2">Películas</string>
+    <string name="text_top_banner_3">Mi Lista</string>
+
+    <string name="text_row1">Populares en Netflix</string>
+    <string name="text_row2">Tendencia</string>
+    <string name="text_row3">Verlo nuevamente</string>
+
+    <!--Glovo texto-->
+
+    <string name="glovo_principal_text">McDonald\'s</string>
+    <string name="glovo_secundario_text">Las más famosas</string>
+    <string name="text_left_icon">2,50€</string>
+    <string name="text_right_icon">20-25 min</string>
 </resources>
