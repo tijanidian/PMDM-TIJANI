@@ -1,6 +1,81 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="150dp"
+    android:background="">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/appCompatImageView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerHorizontal="true"
+        android:scaleType="centerCrop"
+        android:src="@mipmap/glovo_comida"
+        tools:layout_editor_absoluteX="-34dp"
+        tools:layout_editor_absoluteY="0dp" />
+
+    <TextView
+        android:id="@+id/text_logo_top1"
+        style="@style/TittleView_glovo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/glovo_principal_text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/text_logo_top2"
+        style="@style/text_glovo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/glovo_secundario_text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_logo_top1" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/text_logo_top3"
+        style="@style/IconViewGlovo"
+        android:src="@drawable/ic_electric_moped_black_24dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/text_logo_top4"
+        style="@style/text_glovo"
+        android:layout_width="@dimen/text_width_down"
+        android:layout_height="@dimen/text_height_down"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/text_logo_top3"
+        tools:text="@string/text_left_icon" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/text_logo_top5"
+        style="@style/IconViewGlovo"
+        android:src="@drawable/ic_watch_later_white_24dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        style="@style/text_glovo"
+        android:id="@+id/text_logo_top6"
+        android:shadowColor="@color/black"
+        android:layout_width="@dimen/text_width_down"
+        android:layout_height="@dimen/text_height_down"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/text_logo_top5"
+        tools:text="@string/text_right_icon" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/img_logo_glovo"
+        android:layout_width="@dimen/icon_glovo_width"
+        android:layout_height="@dimen/icon_glovo_height"
+        android:src="@drawable/ic_glovo_logo"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
