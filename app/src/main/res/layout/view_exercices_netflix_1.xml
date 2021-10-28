@@ -51,7 +51,7 @@
 
     <!--Primera Fila-->
     <RelativeLayout
-        android:id="@+id/Relative_view_1"
+        android:id="@+id/relative_view_1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@id/view_header">
@@ -94,11 +94,11 @@
 
     <!-- Segunda Fila-->
     <RelativeLayout
-        android:id="@+id/Relative_view_2"
+        android:id="@+id/relative_view_2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:paddingTop="@dimen/padding_top"
-        android:layout_below="@id/Relative_view_1">
+        android:layout_below="@id/relative_view_1">
 
         <androidx.appcompat.widget.AppCompatImageView
             android:id="@+id/film_image_row_2"
@@ -139,10 +139,10 @@
     <!-- Tercera Fila-->
     <RelativeLayout
         android:paddingTop="@dimen/padding_top"
-        android:id="@+id/Relative_view_3"
+        android:id="@+id/relative_view_3"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@id/Relative_view_2">
+        android:layout_below="@id/relative_view_2">
 
         <androidx.appcompat.widget.AppCompatImageView
             android:id="@+id/film_image_row_3"
@@ -185,10 +185,10 @@
 
     <RelativeLayout
         android:paddingTop="@dimen/padding_top"
-        android:id="@+id/Relative_view_4"
+        android:id="@+id/relative_view_4"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@id/Relative_view_3">
+        android:layout_below="@id/relative_view_3">
 
         <androidx.appcompat.widget.AppCompatImageView
             android:id="@+id/film_image_row_4"
