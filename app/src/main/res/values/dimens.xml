@@ -51,10 +51,10 @@
     <!--Text Size icon glovo-->
     <dimen name="max_height">150dp</dimen>
 
-    <dimen name="text_width_down">75sp</dimen>
-    <dimen name="text_height_down">25sp</dimen>
+    <dimen name="text_width_down">75dp</dimen>
+    <dimen name="text_height_down">25dp</dimen>
 
     <!--Icon Glovo-->
-    <dimen name="icon_glovo_width">120sp</dimen>
-    <dimen name="icon_glovo_height">70sp</dimen>
+    <dimen name="icon_glovo_width">120dp</dimen>
+    <dimen name="icon_glovo_height">70dp</dimen>
 </resources>

@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="150dp"
+    android:layout_height="@dimen/max_height"
     android:background="">
 
     <androidx.appcompat.widget.AppCompatImageView
@@ -12,9 +12,7 @@
         android:layout_height="match_parent"
         android:layout_centerHorizontal="true"
         android:scaleType="centerCrop"
-        android:src="@mipmap/glovo_comida"
-        tools:layout_editor_absoluteX="-34dp"
-        tools:layout_editor_absoluteY="0dp" />
+        android:src="@mipmap/glovo_comida" />
 
     <TextView
         android:id="@+id/text_logo_top1"
