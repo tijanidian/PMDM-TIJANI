@@ -13,7 +13,7 @@
         tools:src="@mipmap/ic_launcher_round" />
 
     <TextView
-        android:id="@+id/text_logo_top1"
+        android:id="@+id/text_principal_marca"
         style="@style/TittleView_glovo_just_size"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -26,7 +26,7 @@
         style="@style/text_glovo_just_size"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/text_logo_top1"
+        android:layout_below="@+id/text_principal_marca"
         android:layout_centerHorizontal="true"
         tools:text="@string/glovo_secundario_text" />
 
@@ -64,7 +64,7 @@
         tools:text="@string/text_right_icon" />
 
     <androidx.appcompat.widget.AppCompatImageView
-        android:id="@+id/img_logo_glovo"
+        android:id="@+id/logo_glovo_principal"
         android:layout_width="@dimen/icon_glovo_width"
         android:layout_height="@dimen/icon_glovo_height"
         android:layout_alignParentBottom="true"

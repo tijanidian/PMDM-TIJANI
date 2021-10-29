@@ -24,7 +24,7 @@ class UiTestGlovoActivity : AppCompatActivity() {
     }
 
     private fun setupView() {
-        labelTitle = findViewById(R.id.text_logo_top1)
+        labelTitle = findViewById(R.id.text_principal_marca)
         secundariText = findViewById(R.id.text_secundario)
         labelPrice = findViewById(R.id.price_text)
         LabelTime = findViewById(R.id.time_text)
@@ -35,7 +35,7 @@ class UiTestGlovoActivity : AppCompatActivity() {
         val imageBike: AppCompatImageView = findViewById(R.id.bike_icon)
         imageBike.setImageResource(R.drawable.ic_electric_moped_black_24dp)
 
-        val imageLogoGlovo: AppCompatImageView = findViewById(R.id.img_logo_glovo)
+        val imageLogoGlovo: AppCompatImageView = findViewById(R.id.logo_glovo_principal)
         imageLogoGlovo.setImageResource(R.drawable.ic_glovo_logo)
 
         val imageWatch: AppCompatImageView = findViewById(R.id.icon_clock)
@@ -55,7 +55,7 @@ class UiTestGlovoActivity : AppCompatActivity() {
     }
 
     private fun changeColorText() {
-        val textPrincipal: TextView = findViewById(R.id.text_logo_top1)
+        val textPrincipal: TextView = findViewById(R.id.text_principal_marca)
         textPrincipal.setTextColor(ContextCompat.getColor(this, R.color.white))
 
         val textSecundari: TextView = findViewById(R.id.text_secundario)
