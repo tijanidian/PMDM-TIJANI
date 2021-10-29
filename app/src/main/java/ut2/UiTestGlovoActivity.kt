@@ -4,61 +4,69 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.TextView
 import androidx.appcompat.widget.AppCompatImageView
-import androidx.appcompat.widget.AppCompatTextView
 import androidx.core.content.ContextCompat
 import com.tijanidian.pmpd_playground.R
 
 class UiTestGlovoActivity : AppCompatActivity() {
+    //Creamos el objeto del viewModel para poder acceder a los distintos modelos de GlovoModels
+    private val globoViewModel = UiTestGlovoViewModel()
+
+    private lateinit var labelTitle: TextView
+    private lateinit var secundariText: TextView
+    private lateinit var labelPrice: TextView
+    private lateinit var LabelTime: TextView
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_ui_test_glovo)
-        initTest()
+        setupView()
+        renderView()
+        changeColorText()
     }
 
-    private fun initTest(){
-        changeStyleText()
-        changeBackGround()
+    private fun setupView() {
+        labelTitle = findViewById(R.id.text_logo_top1)
+        secundariText = findViewById(R.id.text_secundario)
+        labelPrice = findViewById(R.id.price_text)
+        LabelTime = findViewById(R.id.time_text)
+
+        val imageBackground: AppCompatImageView = findViewById(R.id.backgroud_top)
+        imageBackground.setImageResource(R.mipmap.glovo_comida)
+
+        val imageBike: AppCompatImageView = findViewById(R.id.bike_icon)
+        imageBike.setImageResource(R.drawable.ic_electric_moped_black_24dp)
+
+        val imageLogoGlovo: AppCompatImageView = findViewById(R.id.img_logo_glovo)
+        imageLogoGlovo.setImageResource(R.drawable.ic_glovo_logo)
+
+        val imageWatch: AppCompatImageView = findViewById(R.id.icon_clock)
+        imageWatch.setImageResource(R.drawable.ic_watch_later_white_24dp)
     }
 
+    private fun renderView() {
+        val globoModel = globoViewModel.getGlovoModel()
+        //Texto Principal
+        labelTitle.setText(globoModel.principal)
+        //Accedemos a ello desde la data class GlovoModel
+        secundariText.setText(globoModel.segundario)
 
-    private fun changeStyleText(){
-        val textView: TextView =findViewById(R.id.text_logo_top1)
-        textView.setText(R.string.glovo_principal_text)
-        textView.setTextColor(ContextCompat.getColor(this,R.color.white))
+        labelPrice.setText(globoModel.leftIcon)
 
-        val textView2:TextView=findViewById(R.id.text_logo_top2)
-        textView2.setText(R.string.glovo_secundario_text)
-        textView2.setTextColor(ContextCompat.getColor(this,R.color.white))
-
-
-        val textView3:TextView=findViewById(R.id.text_logo_top4)
-        textView3.setText(R.string.text_left_icon)
-        textView3.setTextColor(ContextCompat.getColor(this,R.color.white))
-
-        val textView4:TextView=findViewById(R.id.text_logo_top6)
-        textView4.setText(R.string.text_right_icon)
-        textView4.setTextColor(ContextCompat.getColor(this,R.color.white))
-
-
+        LabelTime.setText(globoModel.rightIcon)
     }
 
-    private fun changeBackGround(){
-        val image: AppCompatImageView =findViewById(R.id.backgroud_top)
-        image.setImageResource(R.mipmap.glovo_comida)
+    private fun changeColorText() {
+        val textPrincipal: TextView = findViewById(R.id.text_logo_top1)
+        textPrincipal.setTextColor(ContextCompat.getColor(this, R.color.white))
 
-        val image2: AppCompatImageView =findViewById(R.id.text_logo_top3)
-        image2.setImageResource(R.drawable.ic_electric_moped_black_24dp)
-
-        val image3: AppCompatImageView =findViewById(R.id.img_logo_glovo)
-        image3.setImageResource(R.drawable.ic_glovo_logo)
-
-        val image4: AppCompatImageView =findViewById(R.id.text_logo_top5)
-        image4.setImageResource(R.drawable.ic_watch_later_white_24dp)
+        val textSecundari: TextView = findViewById(R.id.text_secundario)
+        textSecundari.setTextColor(ContextCompat.getColor(this, R.color.white))
 
 
+        val labelPrice: TextView = findViewById(R.id.price_text)
+        labelPrice.setTextColor(ContextCompat.getColor(this, R.color.white))
 
+        val rightText: TextView = findViewById(R.id.time_text)
+        rightText.setTextColor(ContextCompat.getColor(this, R.color.white))
 
     }
-
-
 }
