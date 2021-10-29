@@ -14,7 +14,7 @@
         android:padding="@dimen/padding_left">
 
         <androidx.appcompat.widget.AppCompatImageView
-            android:id="@+id/img3"
+            android:id="@+id/icon_warning"
             style="@style/IconView"
             android:src="@drawable/ic_error_outline"
             tools:ignore="MissingConstraints" />
@@ -38,7 +38,7 @@
             android:layout_height="match_parent">
 
             <androidx.appcompat.widget.AppCompatImageView
-                android:id="@+id/img4"
+                android:id="@+id/icon_pincil"
                 style="@style/IconView"
                 android:layout_alignParentEnd="true"
                 android:paddingStart="@dimen/padding_left"
@@ -57,29 +57,29 @@
         android:layout_below="@id/view_header">
 
         <androidx.appcompat.widget.AppCompatImageView
-            android:id="@+id/film_image_row_1"
+            android:id="@+id/cover_image_you"
             style="@style/AvatarView"
             android:scaleType="centerCrop"
             android:src="@drawable/you"
             tools:ignore="MissingConstraints" />
 
         <TextView
-            android:id="@+id/film_text1_row_1"
+            android:id="@+id/film_text_you_season1"
             style="@style/TittleView"
-            android:layout_marginStart="@dimen/margin_left"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_toEndOf="@id/film_image_row_1"
+            android:layout_marginStart="@dimen/margin_left"
+            android:layout_toEndOf="@id/cover_image_you"
             tools:text="@string/name_img_netf_1" />
 
         <TextView
-            android:id="@+id/film_text2_row_1"
+            android:id="@+id/descr_text_you_season1"
             style="@style/TittleView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@id/film_text1_row_1"
+            android:layout_below="@id/film_text_you_season1"
             android:layout_marginStart="@dimen/margin_left"
-            android:layout_toEndOf="@id/film_image_row_1"
+            android:layout_toEndOf="@id/cover_image_you"
             android:text="@string/desc_img_netf_1" />
 
         <androidx.appcompat.widget.AppCompatImageView
@@ -101,7 +101,7 @@
         android:layout_below="@id/relative_view_1">
 
         <androidx.appcompat.widget.AppCompatImageView
-            android:id="@+id/film_image_row_2"
+            android:id="@+id/cover_image_umbrella"
             style="@style/AvatarView"
             android:scaleType="centerCrop"
             android:src="@drawable/umbrella_academy"
@@ -113,7 +113,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="@dimen/margin_left"
-            android:layout_toEndOf="@id/film_image_row_2"
+            android:layout_toEndOf="@id/cover_image_umbrella"
             tools:text="@string/name_img_netf_2" />
 
         <TextView
@@ -123,7 +123,7 @@
             android:layout_height="wrap_content"
             android:layout_below="@id/film_text1_row_2"
             android:layout_marginStart="@dimen/margin_left"
-            android:layout_toEndOf="@id/film_image_row_2"
+            android:layout_toEndOf="@id/cover_image_umbrella"
             android:text="@string/desc_img_netf_2" />
 
         <androidx.appcompat.widget.AppCompatImageView
@@ -145,7 +145,7 @@
         android:layout_below="@id/relative_view_2">
 
         <androidx.appcompat.widget.AppCompatImageView
-            android:id="@+id/film_image_row_3"
+            android:id="@+id/cover_image_you_season1"
             style="@style/AvatarView"
             android:scaleType="centerCrop"
             android:src="@drawable/you"
@@ -157,7 +157,7 @@
             android:layout_marginStart="@dimen/margin_left"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_toEndOf="@id/film_image_row_3"
+            android:layout_toEndOf="@id/cover_image_you_season1"
             tools:text="@string/name_img_netf_3" />
 
         <TextView
@@ -167,7 +167,7 @@
             android:layout_height="wrap_content"
             android:layout_below="@id/film_text1_row_3"
             android:layout_marginStart="@dimen/padding_left"
-            android:layout_toEndOf="@id/film_image_row_3"
+            android:layout_toEndOf="@id/cover_image_you_season1"
             android:text="@string/desc_img_netf_3" />
 
         <androidx.appcompat.widget.AppCompatImageView
@@ -191,7 +191,7 @@
         android:layout_below="@id/relative_view_3">
 
         <androidx.appcompat.widget.AppCompatImageView
-            android:id="@+id/film_image_row_4"
+            android:id="@+id/cover_image_you_season2"
             style="@style/AvatarView"
             android:scaleType="centerCrop"
             android:src="@drawable/you"
@@ -203,7 +203,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="@dimen/margin_left"
-            android:layout_toEndOf="@id/film_image_row_4"
+            android:layout_toEndOf="@id/cover_image_you_season2"
             tools:text="@string/name_img_netf_4" />
 
         <TextView
@@ -212,7 +212,7 @@
             android:layout_height="wrap_content"
             android:layout_below="@id/film_text1_row_4"
             android:layout_marginStart="@dimen/padding_left"
-            android:layout_toEndOf="@id/film_image_row_4"
+            android:layout_toEndOf="@id/cover_image_you_season2"
             android:text="@string/desc_img_netf_4"
             style="@style/TittleView"
             android:textColor="@color/white" />

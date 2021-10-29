@@ -58,7 +58,7 @@
         android:layout_below="@id/banner_view_1">
 
         <TextView
-            android:id="@+id/film_text1_row_1"
+            android:id="@+id/film_text_you_season1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="@dimen/margin_left"
@@ -71,7 +71,7 @@
             style="@style/AvatarView"
             android:layout_marginStart="@dimen/margin_Left_Icon"
             android:layout_marginEnd="@dimen/margin_Right_Icon"
-            android:layout_below="@id/film_text1_row_1"
+            android:layout_below="@id/film_text_you_season1"
             tools:src="@tools:sample/avatars" />
 
         <androidx.appcompat.widget.AppCompatImageView
@@ -79,14 +79,14 @@
             style="@style/AvatarView"
             android:layout_marginStart="@dimen/margin_Left_Icon"
             android:layout_marginEnd="@dimen/margin_Right_Icon"
-            android:layout_below="@id/film_text1_row_1"
+            android:layout_below="@id/film_text_you_season1"
             android:layout_toRightOf="@id/img1_row1"
             tools:src="@tools:sample/avatars" />
 
         <androidx.appcompat.widget.AppCompatImageView
             android:id="@+id/img3_row1"
             style="@style/AvatarView"
-            android:layout_below="@id/film_text1_row_1"
+            android:layout_below="@id/film_text_you_season1"
             android:layout_marginStart="@dimen/margin_Left_Icon"
             android:layout_marginEnd="@dimen/margin_Right_Icon"
             android:layout_toEndOf="@id/img2_row1"
