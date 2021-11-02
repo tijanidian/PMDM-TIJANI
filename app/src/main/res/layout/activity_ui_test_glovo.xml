@@ -14,7 +14,7 @@
 
     <TextView
         android:id="@+id/text_logo_top1"
-        style="@style/TittleView_glovo_just_size"
+        style="@style/TittleViewGlovoJustSize"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"

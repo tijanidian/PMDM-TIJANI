@@ -5,7 +5,6 @@
     android:layout_height="@dimen/max_height">
 
     <androidx.appcompat.widget.AppCompatImageView
-
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_centerHorizontal="true"
@@ -13,8 +12,8 @@
         android:src="@mipmap/glovo_comida" />
 
     <TextView
-        android:id="@+id/text_logo_top1"
-        style="@style/TittleView_glovo"
+        android:id="@+id/main_text"
+        style="@style/TittleViewGlovo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
@@ -22,49 +21,49 @@
         android:text="@string/glovo_principal_text" />
 
     <TextView
-        android:id="@+id/text_logo_top2"
-        style="@style/text_glovo"
+        android:id="@+id/secundary_text"
+        style="@style/textGlovo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/text_logo_top1"
+        android:layout_below="@+id/main_text"
         android:layout_centerHorizontal="true"
         android:text="@string/glovo_secundario_text" />
 
 
     <androidx.appcompat.widget.AppCompatImageView
-        android:id="@+id/text_logo_top3"
+        android:id="@+id/icon_bike_delivery"
         style="@style/IconViewGlovo"
         android:layout_alignParentBottom="true"
         android:src="@drawable/ic_electric_moped_black_24dp" />
 
     <TextView
-        android:id="@+id/text_logo_top4"
-        style="@style/text_glovo"
+        android:id="@+id/label_price"
+        style="@style/textGlovo"
         android:layout_width="@dimen/text_width_down"
         android:layout_height="@dimen/text_height_down"
         android:layout_alignParentBottom="true"
-        android:layout_toEndOf="@id/text_logo_top3"
-        tools:text="@string/text_left_icon" />
+        android:layout_toEndOf="@id/icon_bike_delivery"
+        tools:text="@string/label_price" />
 
 
     <androidx.appcompat.widget.AppCompatImageView
-        android:id="@+id/text_logo_top5"
+        android:id="@+id/icon_time"
         style="@style/IconViewGlovo"
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
         android:src="@drawable/ic_watch_later_white_24dp" />
 
     <TextView
-        android:id="@+id/text_logo_top6"
-        style="@style/text_glovo"
+        android:id="@+id/label_time"
+        style="@style/textGlovo"
         android:layout_width="@dimen/text_width_down"
         android:layout_height="@dimen/text_height_down"
         android:layout_alignParentBottom="true"
-        android:layout_toStartOf="@id/text_logo_top5"
+        android:layout_toStartOf="@id/icon_time"
         tools:text="@string/text_right_icon" />
 
     <androidx.appcompat.widget.AppCompatImageView
-        android:id="@+id/img_logo_glovo"
+        android:id="@+id/icon_glovo"
         android:layout_width="@dimen/icon_glovo_width"
         android:layout_height="@dimen/icon_glovo_height"
         android:layout_alignParentBottom="true"
