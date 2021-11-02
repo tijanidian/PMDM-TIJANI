@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/max_height">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/backgroud_top"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerHorizontal="true"
+        android:scaleType="centerCrop"
+        tools:src="@mipmap/ic_launcher_round" />
+
+    <TextView
+        android:id="@+id/text_principal_marca"
+        style="@style/TittleView_glovo_just_size"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:shadowColor="@color/black"
+        tools:text="@string/glovo_principal_text" />
+
+    <TextView
+        android:id="@+id/text_secundario"
+        style="@style/text_glovo_just_size"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text_principal_marca"
+        android:layout_centerHorizontal="true"
+        tools:text="@string/glovo_secundario_text" />
+
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/bike_icon"
+        style="@style/IconViewGlovo"
+        android:layout_alignParentBottom="true"
+        tools:src="@drawable/ic_electric_moped_black_24dp" />
+
+    <TextView
+        android:id="@+id/price_text"
+        style="@style/text_glovo_just_size"
+        android:layout_width="@dimen/text_width_down"
+        android:layout_height="@dimen/text_height_down"
+        android:layout_alignParentBottom="true"
+        android:layout_toEndOf="@id/bike_icon"
+        tools:text="@string/label_price" />
+
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/icon_clock"
+        style="@style/IconViewGlovo"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        tools:src="@drawable/ic_watch_later_white_24dp" />
+
+    <TextView
+        android:id="@+id/time_text"
+        style="@style/text_glovo_just_size"
+        android:layout_width="@dimen/text_width_down"
+        android:layout_height="@dimen/text_height_down"
+        android:layout_alignParentBottom="true"
+        android:layout_toStartOf="@id/icon_clock"
+        tools:text="@string/text_right_icon" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/logo_glovo_principal"
+        android:layout_width="@dimen/icon_glovo_width"
+        android:layout_height="@dimen/icon_glovo_height"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        tools:src="@drawable/ic_glovo_logo" />
+
+
+</RelativeLayout>
