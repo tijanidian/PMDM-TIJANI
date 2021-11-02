@@ -64,7 +64,7 @@
             tools:ignore="MissingConstraints" />
 
         <TextView
-            android:id="@+id/film_text_you_season1"
+            android:id="@+id/film_text_you"
             style="@style/TittleView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -73,17 +73,17 @@
             tools:text="@string/name_img_netf_1" />
 
         <TextView
-            android:id="@+id/descr_text_you_season1"
+            android:id="@+id/descr_text_you"
             style="@style/TittleView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@id/film_text_you_season1"
+            android:layout_below="@id/film_text_you"
             android:layout_marginStart="@dimen/margin_left"
             android:layout_toEndOf="@id/cover_image_you"
             android:text="@string/desc_img_netf_1" />
 
         <androidx.appcompat.widget.AppCompatImageView
-            android:id="@+id/img_row1"
+            android:id="@+id/arrow_icon"
             style="@style/IconView"
             android:layout_alignParentEnd="true"
             android:layout_centerVertical="true"
@@ -108,7 +108,7 @@
             tools:ignore="MissingConstraints" />
 
         <TextView
-            android:id="@+id/film_text1_row_2"
+            android:id="@+id/film_text_umbrella"
             style="@style/TittleView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -117,17 +117,17 @@
             tools:text="@string/name_img_netf_2" />
 
         <TextView
-            android:id="@+id/film_text2_row_2"
+            android:id="@+id/desc_umbrella"
             style="@style/TittleView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@id/film_text1_row_2"
+            android:layout_below="@id/film_text_umbrella"
             android:layout_marginStart="@dimen/margin_left"
             android:layout_toEndOf="@id/cover_image_umbrella"
             android:text="@string/desc_img_netf_2" />
 
         <androidx.appcompat.widget.AppCompatImageView
-            android:id="@+id/img_row2"
+            android:id="@+id/arrow_icon_umbrella"
             style="@style/IconView"
             android:layout_alignParentEnd="true"
             android:layout_centerVertical="true"
@@ -145,33 +145,33 @@
         android:layout_below="@id/relative_view_2">
 
         <androidx.appcompat.widget.AppCompatImageView
-            android:id="@+id/cover_image_you_season1"
+            android:id="@+id/cover_image_elite"
             style="@style/AvatarView"
             android:scaleType="centerCrop"
-            android:src="@drawable/you"
+            android:src="@drawable/elite"
             tools:ignore="MissingConstraints" />
 
         <TextView
-            android:id="@+id/film_text1_row_3"
+            android:id="@+id/film_text_elite"
             style="@style/TittleView"
-            android:layout_marginStart="@dimen/margin_left"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_toEndOf="@id/cover_image_you_season1"
+            android:layout_marginStart="@dimen/margin_left"
+            android:layout_toEndOf="@id/cover_image_elite"
             tools:text="@string/name_img_netf_3" />
 
         <TextView
-            android:id="@+id/film_text2_row_3"
+            android:id="@+id/desc_elite"
             style="@style/TittleView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@id/film_text1_row_3"
+            android:layout_below="@id/film_text_elite"
             android:layout_marginStart="@dimen/padding_left"
-            android:layout_toEndOf="@id/cover_image_you_season1"
+            android:layout_toEndOf="@id/cover_image_elite"
             android:text="@string/desc_img_netf_3" />
 
         <androidx.appcompat.widget.AppCompatImageView
-            android:id="@+id/img_row3"
+            android:id="@+id/icon_time_elite"
             style="@style/IconView"
             android:layout_alignParentEnd="true"
             android:layout_centerVertical="true"
@@ -194,11 +194,11 @@
             android:id="@+id/cover_image_you_season2"
             style="@style/AvatarView"
             android:scaleType="centerCrop"
-            android:src="@drawable/you"
+            android:src="@drawable/willoughby"
             tools:ignore="MissingConstraints" />
 
         <TextView
-            android:id="@+id/film_text1_row_4"
+            android:id="@+id/film_text_willoughby"
             style="@style/TittleView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -207,18 +207,18 @@
             tools:text="@string/name_img_netf_4" />
 
         <TextView
-            android:id="@+id/film_text2_row_4"
+            android:id="@+id/desc_willoughby"
+            style="@style/TittleView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@id/film_text1_row_4"
+            android:layout_below="@id/film_text_willoughby"
             android:layout_marginStart="@dimen/padding_left"
             android:layout_toEndOf="@id/cover_image_you_season2"
             android:text="@string/desc_img_netf_4"
-            style="@style/TittleView"
             android:textColor="@color/white" />
 
         <androidx.appcompat.widget.AppCompatImageView
-            android:id="@+id/img_row4"
+            android:id="@+id/icon_time_willoughby"
             style="@style/IconView"
             android:layout_alignParentEnd="true"
             android:layout_centerVertical="true"
@@ -241,7 +241,7 @@
 
 
         <androidx.appcompat.widget.AppCompatImageView
-            android:id="@+id/img_button1"
+            android:id="@+id/home_icon"
             style="@style/IconView"
             android:layout_marginStart="@dimen/button_icon_left"
             android:layout_marginEnd="@dimen/button_icon_right"
@@ -249,7 +249,7 @@
             tools:ignore="MissingConstraints" />
 
         <androidx.appcompat.widget.AppCompatImageView
-            android:id="@+id/img_button2"
+            android:id="@+id/search_icon"
             style="@style/IconView"
             android:layout_marginStart="@dimen/button_icon_left"
             android:layout_marginEnd="@dimen/button_icon_right"
@@ -257,7 +257,7 @@
             tools:ignore="MissingConstraints" />
 
         <androidx.appcompat.widget.AppCompatImageView
-            android:id="@+id/img_button3"
+            android:id="@+id/play_icon"
             style="@style/IconView"
             android:layout_marginStart="@dimen/button_icon_left"
             android:layout_marginEnd="@dimen/button_icon_right"
@@ -265,7 +265,7 @@
             tools:ignore="MissingConstraints" />
 
         <androidx.appcompat.widget.AppCompatImageView
-            android:id="@+id/img_button4"
+            android:id="@+id/download_icon"
             style="@style/IconView"
             android:layout_marginStart="@dimen/button_icon_left"
             android:layout_marginEnd="@dimen/button_icon_right"
@@ -273,7 +273,7 @@
             tools:ignore="MissingConstraints" />
 
         <androidx.appcompat.widget.AppCompatImageView
-            android:id="@+id/img_button5"
+            android:id="@+id/stack_icon"
             style="@style/IconView"
             android:layout_marginStart="@dimen/button_icon_left"
             android:layout_marginEnd="@dimen/button_icon_right"
