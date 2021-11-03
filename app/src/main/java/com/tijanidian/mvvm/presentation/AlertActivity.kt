@@ -5,11 +5,11 @@ import android.os.Bundle
 import androidx.activity.viewModels
 import com.tijanidian.pmpd_playground.R
 
-class MvvmActivity : AppCompatActivity() {
-    private val viewMode:MvvmViewModel by viewModels()
+class AlertActivity : AppCompatActivity() {
+    private val viewMode:AlertViewModel by viewModels()
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_mvvm)
+        setContentView(R.layout.activity_alert)
         render()
     }
 
