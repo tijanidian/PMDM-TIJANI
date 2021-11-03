@@ -30,7 +30,7 @@ class UiTestGlovoActivity : AppCompatActivity() {
         LabelTime = findViewById(R.id.time_text)
 
         val imageBackground: AppCompatImageView = findViewById(R.id.backgroud_top)
-        imageBackground.setImageResource(R.mipmap.glovo_comida)
+        imageBackground.setImageResource(R.drawable.glovo_comida)
 
         val imageBike: AppCompatImageView = findViewById(R.id.bike_icon)
         imageBike.setImageResource(R.drawable.ic_electric_moped_black_24dp)
