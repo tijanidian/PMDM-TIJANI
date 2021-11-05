@@ -1,4 +1,4 @@
-package ut2
+package com.tijanidian.mvvm.ut2
 
 import com.tijanidian.pmpd_playground.R
 

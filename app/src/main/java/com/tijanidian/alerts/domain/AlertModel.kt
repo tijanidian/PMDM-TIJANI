@@ -1,7 +1,7 @@
-package com.tijanidian.mvvm.domain
+package com.tijanidian.alerts.domain
 
 
-data class AlertModel (
+data class AlertModel(
     val id: String,
     val title: String,
     val type: Int,
@@ -10,7 +10,7 @@ data class AlertModel (
     val body: String,
     val source: String,
     val files: List<FileEntity>
-    )
+)
 
 data class FileEntity(val name: String, val url: String)
 

@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:orientation="vertical"
     android:layout_height="match_parent"
-    tools:context="ut2.UiActivity">
+    tools:context="com.tijanidian.mvvm.ut2.UiActivity">
 
     <!--Mete aquí dentro toda esta vista-->
     <include layout="@layout/view_elements"/>

@@ -1,4 +1,4 @@
-package ut2
+package com.tijanidian.mvvm.ut2
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle

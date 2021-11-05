@@ -61,4 +61,9 @@
 
     <!--Text size main plag-->
     <dimen name="text_size_plag_main">18sp</dimen>
+
+    <!--Text Size icon glovo-->
+    <dimen name="max_height_plag">320dp</dimen>
+
+    <dimen name="corner_card">4dp</dimen>
 </resources>
