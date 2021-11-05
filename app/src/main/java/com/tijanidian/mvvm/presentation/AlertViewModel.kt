@@ -5,5 +5,5 @@ import com.tijanidian.mvvm.domain.GetAlertUseCase
 
 class AlertViewModel(private val getAlertUseCase:GetAlertUseCase): ViewModel() {
 
-    fun getAllMvvm()=getAlertUseCase.execute("1")
+    fun getAlerts() = getAlertUseCase.execute()
 }
