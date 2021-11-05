@@ -4,34 +4,47 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:layout_marginTop="100dp"
     tools:context="com.tijanidian.mvvm.presentation.AlertActivity">
 
 
     <ImageView
-        android:id="@+id/imageView"
+        android:id="@+id/image_view"
         android:layout_width="24dp"
         android:layout_height="24dp"
-        tools:src="@drawable/ic_leon"
+        tools:src="@drawable/ic_warning"
         app:layout_constraintEnd_toStartOf="@+id/text_bold"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/text_bold"
-        android:layout_width="wrap_content"
+        android:layout_width="320dp"
         android:layout_height="wrap_content"
-        tools:text="Recomendaciones de manejo. Periodo estival 2021"
+        style="@style/main_text_plag"
+        tools:text="@string/text_bold_plag"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/current_date"
-        android:layout_width="wrap_content"
+        android:layout_width="320dp"
         android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/text_bold"
-        tools:text="21/06/2021" />
+        tools:text="@string/text_date_plag" />
+
+    <TextView
+        android:id="@+id/text_body"
+        android:layout_width="320dp"
+        style="@style/text_plag"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/current_date"
+        tools:text="@string/text_body_plag" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
