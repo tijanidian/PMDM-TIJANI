@@ -9,9 +9,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.PMPDPlayGround">
-        <activity
-            android:name="com.tijanidian.mvvm.presentation.AlertActivity"
-            android:exported="true" />
+
         <activity
             android:name=".MainActivity"
             android:exported="true" />
@@ -20,7 +18,10 @@
             android:exported="true" />
         <activity
             android:name="ut2.UiTestGlovoActivity"
-            android:exported="true">
+            android:exported="true"/>
+            <activity
+                android:name="com.tijanidian.mvvm.presentation.AlertActivity"
+                android:exported="true" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
