@@ -18,9 +18,12 @@
             android:exported="true" />
         <activity
             android:name="com.tijanidian.mvvm.ut2.UiTestGlovoActivity"
+            android:exported="true" />
+        <activity
+            android:name="com.tijanidian.alerts_with_mvvm.presentation.AlertActivity"
             android:exported="true"/>
             <activity
-                android:name="com.tijanidian.alerts_with_mvvm.presentation.AlertActivity"
+                android:name="com.tijanidian.ex02_users_example.presentation.Ut02Ex02Activity"
                 android:exported="true" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
