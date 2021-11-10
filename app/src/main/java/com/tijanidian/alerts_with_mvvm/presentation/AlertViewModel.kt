@@ -1,7 +1,7 @@
-package com.tijanidian.alerts.presentation
+package com.tijanidian.alerts_with_mvvm.presentation
 
 import androidx.lifecycle.ViewModel
-import com.tijanidian.alerts.domain.GetAlertUseCase
+import com.tijanidian.alerts_with_mvvm.domain.GetAlertUseCase
 
 class AlertViewModel(private val getAlertUseCase: GetAlertUseCase) : ViewModel() {
 

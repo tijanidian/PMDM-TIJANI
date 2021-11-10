@@ -1,4 +1,4 @@
-package com.tijanidian.alerts.domain
+package com.tijanidian.alerts_with_mvvm.domain
 
 class GetAlertUseCase(private val alertRepository: AlertRepository) {
 

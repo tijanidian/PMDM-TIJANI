@@ -20,7 +20,7 @@
             android:name="com.tijanidian.mvvm.ut2.UiTestGlovoActivity"
             android:exported="true"/>
             <activity
-                android:name="com.tijanidian.alerts.presentation.AlertActivity"
+                android:name="com.tijanidian.alerts_with_mvvm.presentation.AlertActivity"
                 android:exported="true" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

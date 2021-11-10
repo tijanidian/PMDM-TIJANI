@@ -1,10 +1,10 @@
-package com.tijanidian.alerts.presentation
+package com.tijanidian.alerts_with_mvvm.presentation
 
 import android.os.Bundle
 import android.util.Log
 import androidx.appcompat.app.AppCompatActivity
-import com.tijanidian.alerts.data.AlertDataRepository
-import com.tijanidian.alerts.domain.GetAlertUseCase
+import com.tijanidian.alerts_with_mvvm.data.AlertDataRepository
+import com.tijanidian.alerts_with_mvvm.domain.GetAlertUseCase
 import com.tijanidian.pmpd_playground.R
 import com.tijanidian.pmpd_playground.databinding.ActivityAlertsBinding
 

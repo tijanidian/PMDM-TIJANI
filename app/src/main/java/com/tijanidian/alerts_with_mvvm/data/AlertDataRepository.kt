@@ -1,8 +1,7 @@
-package com.tijanidian.alerts.data
+package com.tijanidian.alerts_with_mvvm.data
 
-import com.tijanidian.alerts.domain.AlertModel
-import com.tijanidian.alerts.domain.AlertRepository
-import com.tijanidian.alerts.domain.FileEntity
+import com.tijanidian.alerts_with_mvvm.domain.AlertModel
+import com.tijanidian.alerts_with_mvvm.domain.AlertRepository
 
 class AlertDataRepository : AlertRepository {
     override fun getAlerts(): List<AlertModel> = mutableListOf(
