@@ -10,11 +10,11 @@
     <dimen name="thumbnails_width_big">100dp</dimen>
     <dimen name="thumbnails_height_bib">100dp</dimen>
 
-    <dimen name="icon_width">42dp</dimen>
-    <dimen name="icon_height">42dp</dimen>
+    <dimen name="icon_width">32dp</dimen>
+    <dimen name="icon_height">32dp</dimen>
 
-    <dimen name="icon_width_medium">24dp</dimen>
-    <dimen name="icon_height_medium">24dp</dimen>
+    <dimen name="icon_width_medium">44dp</dimen>
+    <dimen name="icon_height_medium">44dp</dimen>
 
     <dimen name="icon_width_small">20sp</dimen>
     <dimen name="icon_height_small">20sp</dimen>

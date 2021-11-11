@@ -21,10 +21,13 @@
             android:exported="true" />
         <activity
             android:name="com.tijanidian.alerts_with_mvvm.presentation.AlertActivity"
-            android:exported="true"/>
-            <activity
-                android:name="com.tijanidian.ex02_users_example.presentation.Ut02Ex02Activity"
-                android:exported="true" >
+            android:exported="true" />
+        <activity
+            android:name="com.tijanidian.ex02_users_example.presentation.Ut02Ex02Activity"
+            android:exported="true" />
+        <activity
+            android:name="com.tijanidian.ex02_alerts_recyclerview.presentation.Ut02AlertRecyclerActivity"
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
