@@ -12,6 +12,8 @@ class Ut02AlertRecyclerViewModel(private val useCase: GetAlertUserCase) : ViewMo
                 alertModel.title,
                 alertModel.datePublished,
                 alertModel.summary,
+                alertModel.type,
+                alertModel.id
             )
         }
 
