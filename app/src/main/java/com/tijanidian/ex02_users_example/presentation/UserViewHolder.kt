@@ -12,6 +12,12 @@ class UserViewHolder(view:View):RecyclerView.ViewHolder(view) {
             bind.labelName.text=userViewState.fullName
             bind.labelAge.text=userViewState.age
 
+            //Para interactuar con la vista
+            itemView.setOnClickListener {
+                //Permite cambiar de actividad
+
+            }
+
     }
 
 
