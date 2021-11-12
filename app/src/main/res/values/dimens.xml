@@ -13,8 +13,8 @@
     <dimen name="icon_width">32dp</dimen>
     <dimen name="icon_height">32dp</dimen>
 
-    <dimen name="icon_width_medium">44dp</dimen>
-    <dimen name="icon_height_medium">44dp</dimen>
+    <dimen name="icon_width_medium">32dp</dimen>
+    <dimen name="icon_height_medium">32dp</dimen>
 
     <dimen name="icon_width_small">20sp</dimen>
     <dimen name="icon_height_small">20sp</dimen>
@@ -66,4 +66,6 @@
     <dimen name="max_height_plag">320dp</dimen>
 
     <dimen name="corner_card">4dp</dimen>
+
+    <dimen name="card_elevation">3dp</dimen>
 </resources>
