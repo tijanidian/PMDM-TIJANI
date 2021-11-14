@@ -3,11 +3,10 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="@dimen/max_height"
-    android:background="">
+    android:layout_height="@dimen/max_height">
 
     <androidx.appcompat.widget.AppCompatImageView
-        android:id="@+id/appCompatImageView"
+        android:id="@+id/app_compat_image_view"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_centerHorizontal="true"
@@ -15,7 +14,7 @@
         android:src="@drawable/glovo_comida" />
 
     <TextView
-        android:id="@+id/main_text"
+        android:id="@+id/main_brand_text"
         style="@style/TittleViewGlovo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -25,14 +24,14 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/secundary_text"
+        android:id="@+id/brand_description"
         style="@style/textGlovo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/glovo_secundario_text"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/main_text" />
+        app:layout_constraintTop_toBottomOf="@+id/main_brand_text" />
 
     <androidx.appcompat.widget.AppCompatImageView
         android:id="@+id/icon_bike_delivery"

@@ -12,7 +12,7 @@
         android:src="@mipmap/glovo_comida" />
 
     <TextView
-        android:id="@+id/main_text"
+        android:id="@+id/main_brand_text"
         style="@style/TittleViewGlovo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -21,11 +21,11 @@
         android:text="@string/glovo_principal_text" />
 
     <TextView
-        android:id="@+id/secundary_text"
+        android:id="@+id/brand_description"
         style="@style/textGlovo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/main_text"
+        android:layout_below="@+id/main_brand_text"
         android:layout_centerHorizontal="true"
         android:text="@string/glovo_secundario_text" />
 
