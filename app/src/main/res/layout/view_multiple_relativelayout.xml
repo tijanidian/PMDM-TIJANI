@@ -6,7 +6,7 @@
 
 
     <androidx.appcompat.widget.AppCompatImageView
-        android:id="@+id/img1"
+        android:id="@+id/main_avatar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         tools:src="@tools:sample/avatars" />
@@ -15,7 +15,7 @@
         android:id="@+id/img2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/img1"
+        android:layout_alignLeft="@+id/main_avatar"
         android:layout_alignParentEnd="true"
         tools:src="@tools:sample/avatars" />
 
@@ -23,7 +23,7 @@
         android:id="@+id/icon_warning"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_toEndOf="@+id/img1"
+        android:layout_toEndOf="@+id/main_avatar"
         android:layout_below="@+id/img2"
         tools:src="@tools:sample/avatars" />
 
