@@ -32,7 +32,10 @@ class Ut02AlertRecyclerActivity() : AppCompatActivity() {
     }
 
     private fun alertsWithRecyclerView() {
-        val alerts = viewModel.getALets()
-        alertAdapter.setItems(alerts)
+        Thread{
+            val alerts = viewModel.getALets()
+            alertAdapter.setItems(alerts)
+        }.start()
+
     }
 }

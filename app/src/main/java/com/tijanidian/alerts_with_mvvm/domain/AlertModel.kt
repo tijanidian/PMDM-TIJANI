@@ -9,8 +9,8 @@ data class AlertModel(
     val datePublished: String,
     val body: String,
     val source: String,
-    val files: List<FileEntity>
+    val files: List<FileModel>
 )
 
-data class FileEntity(val name: String, val url: String)
+data class FileModel(val name: String, val url: String)
 

@@ -1,6 +1,6 @@
 package com.tijanidian.ex02_alerts_recyclerview.domain
 
-import com.tijanidian.alerts_with_mvvm.domain.FileEntity
+import com.tijanidian.alerts_with_mvvm.domain.FileModel
 
 data class AlertModel (
     val id: String,
@@ -10,7 +10,7 @@ data class AlertModel (
     val datePublished: String,
     val body: String,
     val source: String,
-    val files: List<FileEntity>
+    val files: List<FileModel>
         )
 
-data class FileEntity(val name: String, val url: String)
+data class FileModel(val name: String, val url: String)

@@ -14,8 +14,8 @@
 
         <androidx.appcompat.widget.AppCompatImageView
             android:id="@+id/avatar"
-            android:layout_width="@dimen/icon_width_medium"
-            android:layout_height="@dimen/icon_height_medium"
+            android:layout_width="@dimen/icon_size_medium"
+            android:layout_height="@dimen/icon_size_medium"
             android:src="@drawable/ic_warning" />
 
         <androidx.appcompat.widget.LinearLayoutCompat
@@ -25,7 +25,7 @@
 
             <androidx.appcompat.widget.AppCompatTextView
                 android:id="@+id/label_title"
-                style="@style/main_text_plag"
+                style="@style/MainTextPlag"
                 android:layout_width="@dimen/max_height_plag"
                 android:layout_height="wrap_content"
                 android:text="title" />
@@ -38,7 +38,7 @@
 
             <androidx.appcompat.widget.AppCompatTextView
                 android:id="@+id/label_summary"
-                style="@style/text_plag"
+                style="@style/TextPlag"
                 android:layout_width="@dimen/max_height_plag"
                 android:layout_height="wrap_content"
                 android:text="summary" />

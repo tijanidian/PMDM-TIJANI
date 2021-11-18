@@ -13,10 +13,9 @@
     <dimen name="icon_width">32dp</dimen>
     <dimen name="icon_height">32dp</dimen>
 
-    <dimen name="icon_width_medium">32dp</dimen>
-    <dimen name="icon_height_medium">32dp</dimen>
+    <dimen name="icon_size_medium">32dp</dimen>
 
-    <dimen name="icon_width_small">20sp</dimen>
+    <dimen name="icon_size_small">20sp</dimen>
     <dimen name="icon_height_small">20sp</dimen>
 
     <!--Margin size-->

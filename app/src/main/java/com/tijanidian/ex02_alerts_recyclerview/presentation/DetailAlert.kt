@@ -6,7 +6,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.tijanidian.pmpd_playground.R
 
-class SecondActivity : AppCompatActivity() {
+class DetailAlert : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -19,7 +19,7 @@ class SecondActivity : AppCompatActivity() {
         private val KEY_USER_ID = "Key_user_id"
 
         fun getIntent(context: Context, id: String): Intent {
-            val intent = Intent(context, SecondActivity::class.java)
+            val intent = Intent(context, DetailAlert::class.java)
             intent.putExtra(KEY_USER_ID, id)
             return intent
         }

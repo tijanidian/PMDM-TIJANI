@@ -17,8 +17,8 @@
 
         <ImageView
             android:id="@+id/icon_warning"
-            android:layout_width="@dimen/icon_width_medium"
-            android:layout_height="@dimen/icon_height_medium"
+            android:layout_width="@dimen/icon_size_medium"
+            android:layout_height="@dimen/icon_size_medium"
             app:layout_constraintEnd_toStartOf="@+id/main_title"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
@@ -26,7 +26,7 @@
 
         <TextView
             android:id="@+id/main_title"
-            style="@style/main_text_plag"
+            style="@style/MainTextPlag"
             android:layout_width="@dimen/max_height_plag"
             android:layout_height="wrap_content"
             app:layout_constraintEnd_toEndOf="parent"
