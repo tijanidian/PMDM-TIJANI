@@ -14,8 +14,8 @@
 
         <androidx.appcompat.widget.AppCompatImageView
             android:id="@+id/avatar"
-            android:layout_width="@dimen/icon_size_medium"
-            android:layout_height="@dimen/icon_size_medium"
+            android:layout_width="@dimen/icon_width_medium"
+            android:layout_height="@dimen/icon_width_medium"
             android:src="@drawable/ic_warning" />
 
         <androidx.appcompat.widget.LinearLayoutCompat

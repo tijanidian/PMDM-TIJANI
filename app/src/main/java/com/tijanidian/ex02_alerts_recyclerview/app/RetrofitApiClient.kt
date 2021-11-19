@@ -4,7 +4,7 @@ import com.tijanidian.ex02_alerts_recyclerview.data.AlertApiModel
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
 
-class RetrofitApiClient:ApiClient {
+class RetrofitApiClient : ApiClient {
 
 
     private val urlEndPoint: String = "https://plagricola.sitehub.es/api/public/"
@@ -34,4 +34,17 @@ class RetrofitApiClient:ApiClient {
             alerts ?: mutableListOf()
         } else mutableListOf()
     }
+
+    override fun getAlert(id: String): AlertApiModel? {
+        val call = apiEndPoint.getAlert(id)
+        val response = call.execute()
+
+        return if (response.isSuccessful) {
+            response.body()
+        } else {
+            null
+        }
+    }
+
+
 }
