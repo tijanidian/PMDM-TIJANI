@@ -20,7 +20,7 @@ class AlertViewHolder(private val view: View) : RecyclerView.ViewHolder(view) {
         }
         view.setOnClickListener {
             view.context.startActivity(
-                DetailAlert.getIntent(
+                DetailAlertActivity.getIntent(
                     itemView.context,
                     alertViewState.id
                 )

@@ -5,7 +5,7 @@ import com.tijanidian.ex02_alerts_recyclerview.domain.GetAlertUserCase
 
 class Ut02AlertRecyclerViewModel(private val useCase: GetAlertUserCase) : ViewModel() {
 
-    fun getALets(): List<AlertViewState> {
+    fun getALerts(): List<AlertViewState> {
         val alerts = useCase.execute()
         return alerts.map { alertModel ->
             AlertViewState(

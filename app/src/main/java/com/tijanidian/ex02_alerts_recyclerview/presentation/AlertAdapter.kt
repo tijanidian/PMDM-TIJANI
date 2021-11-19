@@ -11,8 +11,6 @@ class AlertAdapter:RecyclerView.Adapter<AlertViewHolder>() {
     fun setItems(items:List<AlertViewState>){
         dataSet.clear()
         addItems(items)
-        //Visualizar en pantalla
-        notifyDataSetChanged()
     }
 
     fun addItems(items:List<AlertViewState>){
