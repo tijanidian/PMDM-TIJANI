@@ -1,6 +1,7 @@
 package com.tijanidian.ex02_alerts_recyclerview.app
 
 import com.tijanidian.ex02_alerts_recyclerview.data.AlertApiModel
+import com.tijanidian.ex02_alerts_recyclerview.data.DetailAlertApiModel
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
 
@@ -25,7 +26,6 @@ class RetrofitApiClient : ApiClient {
             .build()
     }
 
-
     override fun getAlerts(): List<AlertApiModel> {
         val call = apiEndPoint.getAlerts()
         val response = call.execute()
@@ -35,15 +35,15 @@ class RetrofitApiClient : ApiClient {
         } else mutableListOf()
     }
 
-    override fun getAlert(id: String): AlertApiModel? {
+    override fun getAlert(id: String): DetailAlertApiModel? {
         val call = apiEndPoint.getAlert(id)
         val response = call.execute()
-
         return if (response.isSuccessful) {
-            response.body()
+            response.body()?.data
         } else {
             null
         }
+
     }
 
 
