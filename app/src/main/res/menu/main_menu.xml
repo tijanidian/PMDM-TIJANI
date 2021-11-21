@@ -3,13 +3,21 @@
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <item
-        android:id="@+id/aciont_add"
-        android:icon="@drawable/ic_warning"
+        android:id="@+id/action_add"
+        android:icon="@drawable/ic_bug"
         android:title="Add"
         app:showAsAction="ifRoom" />
     <item
         android:id="@+id/action_settings"
         android:title="Settings"
         app:showAsAction="never" />
+    <item
+        android:id="@+id/action_privacy"
+        android:title="privacy"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_share"
+        android:icon="@drawable/ic_share"
+        app:showAsAction="ifRoom" />
 
 </menu>

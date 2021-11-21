@@ -7,6 +7,10 @@ import android.os.Build
 import android.os.Bundle
 import android.text.Html
 import android.util.Log
+import android.view.Menu
+import android.view.MenuInflater
+import android.view.MenuItem
+import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import com.tijanidian.ex02_alerts_recyclerview.app.RetrofitApiClient
 import com.tijanidian.ex02_alerts_recyclerview.data.AlertDataRepository
@@ -34,6 +38,7 @@ class DetailAlertActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(bind.root)
         loadAlert()
+        setupToolbar()
     }
 
     private fun getAlertId(): String {
@@ -69,6 +74,43 @@ class DetailAlertActivity : AppCompatActivity() {
 
     }
 
+    private fun setupToolbar() {
+        setSupportActionBar(bind.mainBar)
+        supportActionBar?.title = getString(R.string.text_informacion)
+        supportActionBar?.setDisplayHomeAsUpEnabled(true)
+
+    }
+
+    override fun onCreateOptionsMenu(menu: Menu): Boolean {
+        val inflater: MenuInflater = menuInflater
+        inflater.inflate(R.menu.main_menu, menu)
+        return true
+    }
+
+
+    override fun onOptionsItemSelected(item: MenuItem): Boolean {
+        return when (item.itemId) {
+            R.id.action_add -> {
+                Toast.makeText(this, "Suuuuuu", Toast.LENGTH_SHORT).show()
+                true
+            }
+            R.id.action_settings -> {
+                Toast.makeText(this, item.title, Toast.LENGTH_SHORT).show()
+                true
+            }
+            R.id.action_privacy->{
+                Toast.makeText(this, "HeHeHeHeHe", Toast.LENGTH_SHORT).show()
+                true
+            }
+
+            android.R.id.home -> {
+                finish()
+                true
+            }
+            else -> super.onOptionsItemSelected(item)
+        }
+    }
+
     companion object {
         private val KEY_USER_ID = "Key_user_id"
 
@@ -79,4 +121,7 @@ class DetailAlertActivity : AppCompatActivity() {
         }
 
     }
+
+
+
 }
