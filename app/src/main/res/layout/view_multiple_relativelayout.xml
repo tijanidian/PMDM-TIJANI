@@ -20,7 +20,7 @@
         tools:src="@tools:sample/avatars" />
 
     <androidx.appcompat.widget.AppCompatImageView
-        android:id="@+id/icon_warning"
+        android:id="@+id/avatar_icon"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_toEndOf="@+id/main_avatar"
@@ -31,7 +31,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentEnd="true"
-        android:layout_below="@+id/icon_warning"
+        android:layout_below="@+id/avatar_icon"
         tools:src="@tools:sample/avatars" />
 
 </RelativeLayout>
