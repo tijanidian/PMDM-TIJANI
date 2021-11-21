@@ -13,7 +13,7 @@ tools:context="com.tijanidian.ex02_alerts_recyclerview.presentation.DetailAlertA
     tools:context="com.tijanidian.ex02_alerts_recyclerview.presentation.DetailAlertActivity">
 
     <ImageView
-        android:id="@+id/icon_warning"
+        android:id="@+id/avatar_icon"
         android:layout_width="@dimen/icon_width_medium"
         android:layout_height="@dimen/icon_height_medium"
         app:layout_constraintEnd_toStartOf="@+id/main_title"
