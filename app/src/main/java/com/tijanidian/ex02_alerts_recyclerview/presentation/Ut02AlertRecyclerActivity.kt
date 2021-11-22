@@ -7,6 +7,7 @@ import android.view.Menu
 import android.view.MenuInflater
 import android.view.MenuItem
 import android.widget.Toast
+import androidx.lifecycle.Observer
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.tijanidian.ex02_alerts_recyclerview.app.RetrofitApiClient
 import com.tijanidian.ex02_alerts_recyclerview.data.AlertDataRepository
@@ -36,8 +37,9 @@ class Ut02AlertRecyclerActivity() : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(bind.root)
         setUpView()
-        alertsWithRecyclerView()
+        //alertsWithRecyclerView()
         setupToolbar()
+        setupViewStateObservers()
     }
 
     private fun setUpView() {
@@ -46,23 +48,13 @@ class Ut02AlertRecyclerActivity() : AppCompatActivity() {
             LinearLayoutManager(this, LinearLayoutManager.VERTICAL, false)
     }
 
-    private fun alertsWithRecyclerView() {
-        Thread(Runnable {
-            val alerts = viewModel.getAlerts()
-            runOnUiThread {
-                alertAdapter.setItems(alerts)
-            }
-            Log.d("@dev","$alerts")
-        }).start()
-
-    }
-
     private fun setupToolbar() {
         setSupportActionBar(bind.mainBar)
         supportActionBar?.title = getString(R.string.text_main_information)
         supportActionBar?.setDisplayHomeAsUpEnabled(true)
 
     }
+
     override fun onCreateOptionsMenu(menu: Menu): Boolean {
         val inflater: MenuInflater = menuInflater
         inflater.inflate(R.menu.main_menu, menu)
@@ -80,7 +72,7 @@ class Ut02AlertRecyclerActivity() : AppCompatActivity() {
                 Toast.makeText(this, item.title, Toast.LENGTH_SHORT).show()
                 true
             }
-            R.id.action_privacy->{
+            R.id.action_privacy -> {
                 Toast.makeText(this, item.title, Toast.LENGTH_SHORT).show()
                 true
             }
@@ -93,4 +85,23 @@ class Ut02AlertRecyclerActivity() : AppCompatActivity() {
         }
     }
 
+    private fun loadData() {
+        viewModel.alertViewState
+    }
+
+    //Función que deberia ejecutarse una vez, oncreate
+    private fun setupViewStateObservers() {
+        // Se crea el observador. Hay que indicar qué voy a recibir del observador.
+        val nameObserver = Observer<List<AlertViewState>> { alerts ->
+            // Actualiamos la UI con los datos recibidos desde el LiveData (Observer)
+            renderUi(alerts)
+        }
+        // Observamos al LiveData declarado en el ViewModel
+        viewModel.alertViewState.observe(this, nameObserver)
+    }
+
+
+    private fun renderUi(alerts: List<AlertViewState>) {
+        //bind.
+    }
 }
