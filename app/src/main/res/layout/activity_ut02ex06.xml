@@ -4,6 +4,6 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.tijanidian.ex06form.Ut02ex06Activity">
+    tools:context="com.tijanidian.ex06form.presentation.Ut02ex06Activity">
 
 </androidx.constraintlayout.widget.ConstraintLayout>

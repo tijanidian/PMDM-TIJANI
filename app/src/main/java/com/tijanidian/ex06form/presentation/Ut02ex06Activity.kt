@@ -1,4 +1,4 @@
-package com.tijanidian.ex06form
+package com.tijanidian.ex06form.presentation
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -14,6 +14,8 @@ class Ut02ex06Activity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(binding.root)
     }
+
+
 
 
 }
