@@ -1,12 +1,11 @@
 package com.tijanidian.ex02_alerts_recyclerview.presentation
 
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.util.Log
 import android.view.Menu
 import android.view.MenuInflater
 import android.view.MenuItem
 import android.widget.Toast
+import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.Observer
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.tijanidian.ex02_alerts_recyclerview.app.RetrofitApiClient
@@ -40,6 +39,7 @@ class Ut02AlertRecyclerActivity() : AppCompatActivity() {
         //alertsWithRecyclerView()
         setupToolbar()
         setupViewStateObservers()
+        loadData()
     }
 
     private fun setUpView() {
@@ -86,7 +86,7 @@ class Ut02AlertRecyclerActivity() : AppCompatActivity() {
     }
 
     private fun loadData() {
-        viewModel.alertViewState
+        viewModel.fetchAlerts()
     }
 
     //Función que deberia ejecutarse una vez, oncreate
@@ -101,7 +101,7 @@ class Ut02AlertRecyclerActivity() : AppCompatActivity() {
     }
 
 
-    private fun renderUi(alerts: List<AlertViewState>) {
-        //bind.
+    private fun renderUi(alertsViewState: List<AlertViewState>) {
+        alertAdapter.setItems(alertsViewState)
     }
 }

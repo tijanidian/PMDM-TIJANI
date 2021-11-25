@@ -20,9 +20,9 @@ class Ut02AlertRecyclerViewModel(private val getAlertUseCase: GetAlertUserCase) 
         MutableLiveData<List<AlertViewState>>()
     }
 
-    fun fetchAlerts() = viewModelScope.launch(Dispatchers.Main) {
+    fun fetchAlerts() = viewModelScope.launch(Dispatchers.IO) {
         val alerts = getAlertUseCase.execute()
-        _alertViewState.value = alerts.map { AlertViewState.fromAlertModel(it) }
+        _alertViewState.postValue(alerts.map { AlertViewState.fromAlertModel(it) })
     }
 
 }
