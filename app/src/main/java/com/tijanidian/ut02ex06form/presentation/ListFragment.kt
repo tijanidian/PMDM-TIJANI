@@ -1,4 +1,4 @@
-package com.tijanidian.ex06form.presentation
+package com.tijanidian.ut02ex06form.presentation
 
 import android.os.Bundle
 import android.view.LayoutInflater

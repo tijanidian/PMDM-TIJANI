@@ -24,7 +24,7 @@ class UiTestGlovoActivity : AppCompatActivity() {
     }
 
     private fun setupView() {
-        labelTitle = findViewById(R.id.text_principal_marca)
+        labelTitle = findViewById(R.id.text_logo_top1)
         secundariText = findViewById(R.id.text_secundario)
         labelPrice = findViewById(R.id.price_text)
         LabelTime = findViewById(R.id.time_text)
@@ -55,7 +55,7 @@ class UiTestGlovoActivity : AppCompatActivity() {
     }
 
     private fun changeColorText() {
-        val textPrincipal: TextView = findViewById(R.id.text_principal_marca)
+        val textPrincipal: TextView = findViewById(R.id.text_logo_top1)
         textPrincipal.setTextColor(ContextCompat.getColor(this, R.color.white))
 
         val textSecundari: TextView = findViewById(R.id.text_secundario)

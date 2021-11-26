@@ -16,7 +16,6 @@
 
         android:id="@+id/text_logo_top1"
         style="@style/TittleViewGlovoJustSize"
-
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
@@ -25,10 +24,10 @@
 
     <TextView
         android:id="@+id/text_secundario"
-        style="@style/text_glovo_just_size"
+        style="@style/textGlovoJustSize"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/text_principal_marca"
+        android:layout_below="@+id/text_logo_top1"
         android:layout_centerHorizontal="true"
         tools:text="@string/glovo_secundario_text" />
 
@@ -41,7 +40,7 @@
 
     <TextView
         android:id="@+id/price_text"
-        style="@style/text_glovo_just_size"
+        style="@style/textGlovoJustSize"
         android:layout_width="@dimen/text_width_down"
         android:layout_height="@dimen/text_height_down"
         android:layout_alignParentBottom="true"
@@ -58,7 +57,7 @@
 
     <TextView
         android:id="@+id/time_text"
-        style="@style/text_glovo_just_size"
+        style="@style/textGlovoJustSize"
         android:layout_width="@dimen/text_width_down"
         android:layout_height="@dimen/text_height_down"
         android:layout_alignParentBottom="true"

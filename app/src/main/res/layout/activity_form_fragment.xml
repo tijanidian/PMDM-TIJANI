@@ -14,7 +14,7 @@
         android:orientation="vertical">
 
         <EditText
-            android:id="@+id/label_name"
+            android:id="@+id/input_name"
             android:layout_width="match_parent"
             android:layout_height="50dp"
             android:hint="Nombre"
@@ -102,12 +102,6 @@
             android:layout_gravity="center"
             android:layout_marginTop="50dp"
             android:text="guardar" />
-
-        <FrameLayout
-            android:id="@+id/form_fragment"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent" />
-
 
     </LinearLayout>
 </ScrollView>

@@ -3,8 +3,8 @@
     xmlns:app="http://schemas.android.com/apk/res-auto">
     <item
         android:id="@+id/action_add"
-        android:icon="@drawable/ic_leon"
-        android:title="Add"
-        app:showAsAction="ifRoom" />
+        android:icon="@drawable/ic_stack"
+        android:title="Info"
+        app:showAsAction="always" />
    
 </menu>
