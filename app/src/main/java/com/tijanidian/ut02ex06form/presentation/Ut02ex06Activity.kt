@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.Menu
 import android.view.MenuInflater
+import androidx.fragment.app.Fragment
 import com.tijanidian.pmpd_playground.R
 import com.tijanidian.pmpd_playground.databinding.ActivityUt02ex06Binding
 
@@ -15,7 +16,9 @@ class Ut02ex06Activity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(binding.root)
+        setUpView()
         setupToolbar()
+
     }
 
     private fun setupToolbar() {
@@ -34,6 +37,19 @@ class Ut02ex06Activity : AppCompatActivity() {
         //binding.name.text
 
         //val param:SavePlayerUseCase
+    }
+
+    private fun setUpView(){
+        binding.containerFragment.setOnClickListener {
+
+        }
+    }
+
+    private fun replaceFragment(fragment: Fragment) {
+        val fragmentTransition = supportFragmentManager.beginTransaction()
+        //Layout ID, Fragment, TAG
+        //fragmentTransition.replace(R.layout.container_fragment, fragment)
+        fragmentTransition.commit() //aplica los cambios
     }
 
 
