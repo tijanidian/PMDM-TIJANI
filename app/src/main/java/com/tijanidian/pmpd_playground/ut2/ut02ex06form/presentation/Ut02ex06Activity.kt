@@ -8,8 +8,15 @@ import android.view.MenuItem
 import androidx.fragment.app.Fragment
 import com.tijanidian.pmpd_playground.R
 import com.tijanidian.pmpd_playground.databinding.ActivityUt02ex06Binding
+import com.tijanidian.pmpd_playground.ut2.ut02ex06form.data.PlayerLocalData
+import com.tijanidian.pmpd_playground.ut2.ut02ex06form.domain.PlayerModel
+import com.tijanidian.pmpd_playground.ut2.ut02ex06form.domain.PlayerModelFootball
+import java.io.File
 
 class Ut02ex06Activity : AppCompatActivity() {
+
+    private lateinit var playerLocalData: PlayerLocalData
+
     private val binding: ActivityUt02ex06Binding by lazy {
         ActivityUt02ex06Binding.inflate(layoutInflater)
     }
@@ -19,6 +26,7 @@ class Ut02ex06Activity : AppCompatActivity() {
         setContentView(binding.root)
         loadForm()
         setupToolbar()
+        //testFile()
     }
 
     private fun setupToolbar() {
@@ -67,6 +75,16 @@ class Ut02ex06Activity : AppCompatActivity() {
         fragmentTransition.replace(layoutId, fragment, "@tijani")
         fragmentTransition.addToBackStack(null)
         fragmentTransition.commit()
+    }
+
+
+    fun testFile(){
+                File(this.filesDir, PlayerLocalData.AAD_PLAYER)
+                playerLocalData.save(PlayerModelFootball(1,"Ramoncin","Madrid","H","Delantero","Portero"))
+                playerLocalData.save(PlayerModelFootball(2,"Pepe","Castilla y león","H","Delantero","Portero"))
+
+
+
     }
 
 }
