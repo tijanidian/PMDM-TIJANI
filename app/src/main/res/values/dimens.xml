@@ -10,13 +10,12 @@
     <dimen name="thumbnails_width_big">100dp</dimen>
     <dimen name="thumbnails_height_bib">100dp</dimen>
 
-    <dimen name="icon_width">42dp</dimen>
-    <dimen name="icon_height">42dp</dimen>
+    <dimen name="icon_width">32dp</dimen>
+    <dimen name="icon_height">32dp</dimen>
 
-    <dimen name="icon_width_medium">24dp</dimen>
-    <dimen name="icon_height_medium">24dp</dimen>
+    <dimen name="icon_size_medium">32dp</dimen>
 
-    <dimen name="icon_width_small">20sp</dimen>
+    <dimen name="icon_size_small">20sp</dimen>
     <dimen name="icon_height_small">20sp</dimen>
 
     <!--Margin size-->
@@ -57,4 +56,15 @@
     <!--Icon Glovo-->
     <dimen name="icon_glovo_width">120sp</dimen>
     <dimen name="icon_glovo_height">70sp</dimen>
+
+
+    <!--Text size main plag-->
+    <dimen name="text_size_plag_main">18sp</dimen>
+
+    <!--Text Size icon glovo-->
+    <dimen name="max_height_plag">320dp</dimen>
+
+    <dimen name="corner_card">4dp</dimen>
+
+    <dimen name="card_elevation">3dp</dimen>
 </resources>

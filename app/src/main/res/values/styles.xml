@@ -27,7 +27,11 @@
     </style>
 
 
+  
+
+
     <style name="TittleViewGlovoJustSize">
+
 
         <item name="android:textSize">@dimen/text_title_glovo</item>
         <item name="android:textStyle">bold</item>
@@ -40,12 +44,15 @@
         <item name="android:textColor">@color/white</item>
     </style>
     <style name="IconViewGlovo">
-        <item name="android:layout_width">@dimen/icon_height_medium</item>
-        <item name="android:layout_height">@dimen/icon_width_medium</item>
+        <item name="android:layout_width">@dimen/icon_size_medium</item>
+        <item name="android:layout_height">@dimen/icon_size_medium</item>
     </style>
 
 
+
+
     <style name="textGlovo">
+
 
         <item name="android:textSize">@dimen/text_size_small</item>
         <item name="android:textColor">@color/white</item>
@@ -62,5 +69,13 @@
         <item name="android:shadowColor">@color/black</item>
     </style>
 
+
+    <style name="TextPlag">
+        <item name="android:textStyle">bold</item>
+    </style>
+    <style name="MainTextPlag">
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">@dimen/text_size_plag_main</item>
+    </style>
 
 </resources>

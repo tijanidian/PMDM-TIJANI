@@ -31,4 +31,11 @@
     <string name="glovo_secundario_text">Las más famosas</string>
     <string name="label_price">2,50€</string>
     <string name="text_right_icon">20-25 min</string>
+
+    <!--Plagricola-->
+    <string name="text_main_plag">Recomendaciones de manejo. periodo estival 2021</string>
+    <string name="text_date_plag">21/06/2021</string>
+    <string name="text_body_plag">Recordatorio de manejo. Periodo estival 2021 21 junio de 2021. Para agricultores cosecha y post-cosechacoser lo más superficial posible. Retirar las pacas, los cordondes de paja o el...</string>
+
+
 </resources>
