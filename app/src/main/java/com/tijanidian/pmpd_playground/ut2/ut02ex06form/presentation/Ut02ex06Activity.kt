@@ -16,6 +16,7 @@ import com.tijanidian.pmpd_playground.ut2.ut02ex06form.data.PlayerLocalData
 import com.tijanidian.pmpd_playground.ut2.ut02ex06form.domain.PlayerModel
 import com.tijanidian.pmpd_playground.ut2.ut02ex06form.domain.PlayerModelFootball
 import com.tijanidian.pmpd_playground.ut2.ut02ex06form.domain.SavePlayerUseCase
+import com.tijanidian.pmpd_playground.ut2.ut02ex06form.presentation.ryceclerview.PlayerAdapter
 import com.tijanidian.pmpd_playground.ut2.ut02ex06form.presentation.viewmodel.FromFragmentViewModel
 import java.io.File
 
@@ -32,6 +33,7 @@ class Ut02ex06Activity : AppCompatActivity() {
     private val binding: ActivityUt02ex06Binding by lazy {
         ActivityUt02ex06Binding.inflate(layoutInflater)
     }
+
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -110,7 +112,7 @@ class Ut02ex06Activity : AppCompatActivity() {
     }
 
    private fun savePlayerFile(){
-       viewModel.savePlayer()
+       //viewModel.savePlayer()
    }
 
 }

@@ -9,7 +9,6 @@ class PlayerAdapter : RecyclerView.Adapter<PlayerViewHolder>() {
 
     private val dataSet: MutableList<PlayerViewState> = mutableListOf()
 
-
     fun setItems(items: List<PlayerViewState>) {
         dataSet.clear()
         addItems(items)

@@ -5,12 +5,14 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
+import androidx.recyclerview.widget.LinearLayoutManager
 import com.tijanidian.pmpd_playground.databinding.ActivityListFragmentBinding
+import com.tijanidian.pmpd_playground.ut2.ut02ex06form.presentation.ryceclerview.PlayerAdapter
 
 class ListFragment : Fragment() {
 
 private lateinit var binding: ActivityListFragmentBinding
-
+    private val playerAdapter= PlayerAdapter()
     override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,
@@ -18,6 +20,7 @@ private lateinit var binding: ActivityListFragmentBinding
     ): View? {
         binding= ActivityListFragmentBinding.inflate(inflater,container,false)
         return binding.root
+        setUpView()
     }
 
     companion object{
@@ -26,4 +29,8 @@ private lateinit var binding: ActivityListFragmentBinding
 
     }
 
+    private fun setUpView(){
+        binding.playerList.adapter=playerAdapter
+        binding.playerList.layoutManager=LinearLayoutManager(context,LinearLayoutManager.VERTICAL,false)
+    }
 }

@@ -4,6 +4,7 @@ import android.content.Context
 import com.tijanidian.pmpd_playground.commons.serializer.JsonSerializer
 import com.tijanidian.pmpd_playground.ut2.ut02ex06form.domain.PlayerModelFootball
 import com.tijanidian.pmpd_playground.ut2.ut02ex06form.domain.PlayerRepository
+import com.tijanidian.pmpd_playground.ut2.ut02ex06form.domain.SavePlayerUseCase
 import java.io.File
 
 class PlayerLocalData(
@@ -20,7 +21,7 @@ class PlayerLocalData(
         return file
     }
 
-    override suspend fun save(playerModelFootball: PlayerModelFootball){
+    override suspend fun save(playerModelFootball: SavePlayerUseCase.Param){
         val player=fetch().toMutableList()
         player.add(playerModelFootball)
         save(player)

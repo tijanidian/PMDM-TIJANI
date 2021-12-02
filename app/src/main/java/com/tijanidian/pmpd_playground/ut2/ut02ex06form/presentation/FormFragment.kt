@@ -20,15 +20,12 @@ class FormFragment : Fragment() {
     }
 
     fun save(){
-        binding.inputName.text
-        binding.inputLastName.text
-
+        /*
         val param: SavePlayerUseCase.Param(
             binding.inputName.text
             binding.inputLastName.text
-
         )
-
+*/
 
     }
 
