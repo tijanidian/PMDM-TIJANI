@@ -1,13 +1,35 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+
+    <color name="greey">#222222</color>
+    <color name="blue">#1784F3</color>
+    <color name="green_plagricola">#4CAF50</color>
+
+    <!-- Styles Colors Theme -->
+    <color name="primaryColor">@color/green</color>
+    <color name="primaryLightColor">@color/light_green</color>
+    <color name="primaryDarkColor">@color/dark_green</color>
+    <color name="primaryTextColor">@color/white</color>
+    <color name="secondaryColor">@color/orange</color>
+    <color name="secondaryLightColor">@color/light_orange</color>
+    <color name="secondaryDarkColor">@color/dark_orange</color>
+    <color name="secondaryTextColor">@color/black</color>
+
+    <!-- Hex. Colors -->
+    <color name="green">#1b5e20</color>
+    <color name="light_green">#4c8c4a</color>
+    <color name="dark_green">#003300</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="light_grey">#E3E3E3</color>
+    <color name="light_orange">#ffc046</color>
+    <color name="dark_orange">#c56000</color>
+    <color name="orange">#ff8f00</color>
     <color name="purple_200">#FFBB86FC</color>
     <color name="purple_500">#FF6200EE</color>
     <color name="purple_700">#FF3700B3</color>
     <color name="teal_200">#FF03DAC5</color>
     <color name="teal_700">#FF018786</color>
-    <color name="black">#FF000000</color>
-    <color name="white">#FFFFFFFF</color>
-    <color name="greey">#222222</color>
-    <color name="blue">#1784F3</color>
+
 
 </resources>

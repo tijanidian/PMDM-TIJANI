@@ -16,9 +16,9 @@
         tools:context="com.tijanidian.alerts_with_mvvm.presentation.AlertActivity">
 
         <ImageView
-            android:id="@+id/icon_warning"
-            android:layout_width="@dimen/icon_size_medium"
-            android:layout_height="@dimen/icon_size_medium"
+            android:id="@+id/avatar_icon"
+            android:layout_width="@dimen/icon_width_medium"
+            android:layout_height="@dimen/icon_width_medium"
             app:layout_constraintEnd_toStartOf="@+id/main_title"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"

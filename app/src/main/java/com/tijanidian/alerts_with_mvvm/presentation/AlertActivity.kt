@@ -27,7 +27,7 @@ class AlertActivity : AppCompatActivity() {
         viewBinding.mainTitle.text = alert.title
         viewBinding.datePublished.text = alert.datePublished
         viewBinding.summary.text = alert.summary
-        viewBinding.iconWarning.setImageResource(R.drawable.ic_warning)
+        viewBinding.avatarIcon.setImageResource(R.drawable.ic_warning)
 
     }
 }

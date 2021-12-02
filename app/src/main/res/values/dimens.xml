@@ -13,9 +13,10 @@
     <dimen name="icon_width">32dp</dimen>
     <dimen name="icon_height">32dp</dimen>
 
-    <dimen name="icon_size_medium">32dp</dimen>
+    <dimen name="icon_width_medium">32dp</dimen>
+    <dimen name="icon_height_medium">32dp</dimen>
 
-    <dimen name="icon_size_small">20sp</dimen>
+    <dimen name="icon_width_small">20sp</dimen>
     <dimen name="icon_height_small">20sp</dimen>
 
     <!--Margin size-->
@@ -67,4 +68,11 @@
     <dimen name="corner_card">4dp</dimen>
 
     <dimen name="card_elevation">3dp</dimen>
+
+    <!--Detail Activity-->
+    <dimen name="margin_top">28dp</dimen>
+    <dimen name="margin_top_separator">5dp</dimen>
+    <dimen name="separator_height">1dp</dimen>
+    <dimen name="max_width_separator">380dp</dimen>
+
 </resources>
