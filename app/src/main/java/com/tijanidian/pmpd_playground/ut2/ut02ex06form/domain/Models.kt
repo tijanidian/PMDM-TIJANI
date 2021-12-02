@@ -7,6 +7,7 @@ class PlayerModel (id:String,name:String) {
 data class PlayerModelFootball(
     val idPlayer:Int,
     val name:String,
+    val surname:String,
     val community:String,
     val sex:String,
     val firtsPosition:String,

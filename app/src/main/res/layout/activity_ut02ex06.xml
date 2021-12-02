@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context="com.tijanidian.pmpd_playground.ut2.ut02ex06form.presentation.Ut02ex06Activity">
 
     <androidx.appcompat.widget.Toolbar
@@ -22,8 +23,5 @@
         android:id="@+id/container_fragment"
         android:layout_width="match_parent"
         android:layout_height="match_parent" />
-    <include
-        android:id="@+id/alerts_toolbar"
-        layout="@layout/view_custom_toolbar"/>
 
 </androidx.appcompat.widget.LinearLayoutCompat>

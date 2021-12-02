@@ -6,21 +6,30 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import com.tijanidian.pmpd_playground.databinding.ActivityFormFragmentBinding
+import com.tijanidian.pmpd_playground.ut2.ut02ex06form.domain.SavePlayerUseCase
 
 class FormFragment : Fragment() {
     private lateinit var binding: ActivityFormFragmentBinding
-
     override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,
         savedInstanceState: Bundle?
-    ): View? {
-        binding = ActivityFormFragmentBinding.inflate(inflater, container, false)
+    ): View {
+        binding = ActivityFormFragmentBinding.inflate(inflater, container,false)
         return binding.root
     }
 
     fun save(){
         binding.inputName.text
+        binding.inputLastName.text
+
+        val param: SavePlayerUseCase.Param(
+            binding.inputName.text
+            binding.inputLastName.text
+
+        )
+
+
     }
 
     companion object {

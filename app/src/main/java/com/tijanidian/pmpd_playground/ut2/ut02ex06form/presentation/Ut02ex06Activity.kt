@@ -1,7 +1,9 @@
 package com.tijanidian.pmpd_playground.ut2.ut02ex06form.presentation
 
+import android.content.Context
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.util.Log
 import android.view.Menu
 import android.view.MenuInflater
 import android.view.MenuItem
@@ -13,11 +15,15 @@ import com.tijanidian.pmpd_playground.databinding.ActivityUt02ex06Binding
 import com.tijanidian.pmpd_playground.ut2.ut02ex06form.data.PlayerLocalData
 import com.tijanidian.pmpd_playground.ut2.ut02ex06form.domain.PlayerModel
 import com.tijanidian.pmpd_playground.ut2.ut02ex06form.domain.PlayerModelFootball
+import com.tijanidian.pmpd_playground.ut2.ut02ex06form.domain.SavePlayerUseCase
+import com.tijanidian.pmpd_playground.ut2.ut02ex06form.presentation.viewmodel.FromFragmentViewModel
 import java.io.File
 
 class Ut02ex06Activity : AppCompatActivity() {
 
-    private lateinit var playerLocalData: PlayerLocalData
+    private val viewModel=FromFragmentViewModel(SavePlayerUseCase(PlayerLocalData(applicationContext,GsonSerializer(
+        Gson()
+    ))))
 
     private val localData: PlayerLocalData by lazy {
         PlayerLocalData(this,GsonSerializer(Gson()))
@@ -32,7 +38,8 @@ class Ut02ex06Activity : AppCompatActivity() {
         setContentView(binding.root)
         loadForm()
         setupToolbar()
-        testFile()
+
+
     }
 
     private fun setupToolbar() {
@@ -63,7 +70,7 @@ class Ut02ex06Activity : AppCompatActivity() {
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
         return when (item.itemId) {
             R.id.action_add -> {
-                if (supportActionBar?.title == "Formulario") {
+                if (supportActionBar?.title == getString(R.string.form_title)) {
                     replaceFragment(binding.containerFragment.id, FormFragment.createInstance())
                     supportActionBar?.title = getString(R.string.list_title)
                 } else {
@@ -78,20 +85,32 @@ class Ut02ex06Activity : AppCompatActivity() {
 
     private fun replaceFragment(layoutId: Int, fragment: Fragment) {
         val fragmentTransition = supportFragmentManager.beginTransaction()
-        fragmentTransition.replace(layoutId, fragment, "@tijani")
+        fragmentTransition.replace(layoutId, fragment)
         fragmentTransition.addToBackStack(null)
         fragmentTransition.commit()
     }
 
+    /**
+     * Empleado para probar el funcionamiento de la fichero
 
     fun testFile(){
-                val player1=PlayerModelFootball(1,"Ramoncin","Madrid","H","Delantero","Portero")
+                val player1=PlayerModelFootball(1,"Tijani","Dian","Castilla y león","H","Delantero")
         Thread{
             localData.save(player1)
 
         }.start()
 
-
+        fetch()
     }
+     */
+
+    fun fetch(){
+        val fetch=localData.fetch()
+        Log.d("@dev","$fetch")
+    }
+
+   private fun savePlayerFile(){
+       viewModel.savePlayer()
+   }
 
 }

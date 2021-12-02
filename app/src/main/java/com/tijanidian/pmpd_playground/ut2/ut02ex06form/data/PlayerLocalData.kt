@@ -3,12 +3,13 @@ package com.tijanidian.pmpd_playground.ut2.ut02ex06form.data
 import android.content.Context
 import com.tijanidian.pmpd_playground.commons.serializer.JsonSerializer
 import com.tijanidian.pmpd_playground.ut2.ut02ex06form.domain.PlayerModelFootball
+import com.tijanidian.pmpd_playground.ut2.ut02ex06form.domain.PlayerRepository
 import java.io.File
 
 class PlayerLocalData(
     private val context: Context,
     private val serializer: JsonSerializer
-) {
+):PlayerRepository {
     private val playerFile: File by lazy { buildFile() }
 
     private fun buildFile():File {
@@ -19,9 +20,7 @@ class PlayerLocalData(
         return file
     }
 
-
-
-    fun save(playerModelFootball: PlayerModelFootball){
+    override suspend fun save(playerModelFootball: PlayerModelFootball){
         val player=fetch().toMutableList()
         player.add(playerModelFootball)
         save(player)
@@ -34,7 +33,6 @@ class PlayerLocalData(
             playerFile.appendText(serializer.toJson(it,PlayerModelFootball::class.java)+System.lineSeparator())
         }
     }
-
 
     fun fetch():List<PlayerModelFootball>{
         val players:MutableList<PlayerModelFootball> = mutableListOf()
@@ -55,4 +53,7 @@ class PlayerLocalData(
     companion object {
         const val AAD_PLAYER: String = "player_list.txt"
     }
+
+
+
 }
