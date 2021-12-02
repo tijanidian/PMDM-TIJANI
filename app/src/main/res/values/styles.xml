@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="AvatarView">
+        <item name="android:layout_width">@dimen/thumbnails_width</item>
+        <item name="android:layout_height">@dimen/thumbnails_height</item>
+    </style>
+
+    <style name="IconView">
+        <item name="android:layout_width">@dimen/icon_height</item>
+        <item name="android:layout_height">@dimen/icon_width</item>
+    </style>
+
+    <style name="TittleView">
+        <item name="android:textSize">@dimen/text_size_title</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+
+    <style name="TittleViewGlovo">
+
+        <item name="android:textSize">@dimen/text_title_glovo</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:shadowRadius">15</item>
+        <item name="android:shadowColor">@color/black</item>
+    </style>
+
+
+
+    <style name="TittleViewGlovoJustSize">
+
+
+        <item name="android:textSize">@dimen/text_title_glovo</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:shadowRadius">15</item>
+        <item name="android:shadowColor">@color/black</item>
+    </style>
+
+    <style name="textCloseIcone">
+        <item name="android:textSize">@dimen/text_size_icon</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+    <style name="IconViewGlovo">
+        <item name="android:layout_width">@dimen/icon_height_medium</item>
+        <item name="android:layout_height">@dimen/icon_width_medium</item>
+    </style>
+
+
+
+
+    <style name="textGlovo">
+
+
+        <item name="android:textSize">@dimen/text_size_small</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:shadowRadius">15</item>
+        <item name="android:shadowColor">@color/black</item>
+    </style>
+
+    <style name="textGlovoJustSize">
+
+        <item name="android:textSize">@dimen/text_size_small</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:shadowRadius">15</item>
+        <item name="android:shadowColor">@color/black</item>
+    </style>
+
+
+    <style name="TextPlag">
+        <item name="android:textStyle">bold</item>
+    </style>
+    <style name="MainTextPlag">
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">@dimen/text_size_plag_main</item>
+    </style>
+
+    <style name="TextPlagSecond">
+        <item name="android:textColor">@color/white</item>
+
+    </style>
+
+</resources>

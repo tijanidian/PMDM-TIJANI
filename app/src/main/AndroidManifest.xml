@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.tijanidian.pmpd_playground">
-
+<uses-permission android:name="android.permission.INTERNET"/>
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -10,10 +10,27 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.PMPDPlayGround">
         <activity
-            android:name="ut3.UiActivity"
+            android:name="com.tijanidian.ex02_alerts_recyclerview.presentation.DetailAlertActivity"
             android:exported="true" />
         <activity
             android:name=".MainActivity"
+            android:exported="true" />
+        <activity
+            android:name="com.tijanidian.mvvm.ut2.UiActivity"
+            android:exported="true" />
+        <activity
+            android:name="com.tijanidian.mvvm.ut2.UiTestGlovoActivity"
+            android:exported="true" />
+
+        <activity
+            android:name="com.tijanidian.ex02_users_example.presentation.Ut02Ex02Activity"
+            android:exported="true" />
+
+        <activity
+            android:name="com.tijanidian.alerts_with_mvvm.presentation.AlertActivity"
+            android:exported="true" />
+        <activity
+            android:name="com.tijanidian.ex02_alerts_recyclerview.presentation.Ut02AlertRecyclerActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
