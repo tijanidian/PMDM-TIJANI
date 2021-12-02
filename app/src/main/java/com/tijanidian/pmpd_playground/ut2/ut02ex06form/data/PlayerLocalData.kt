@@ -2,7 +2,6 @@ package com.tijanidian.pmpd_playground.ut2.ut02ex06form.data
 
 import android.content.Context
 import com.tijanidian.pmpd_playground.commons.serializer.JsonSerializer
-import com.tijanidian.pmpd_playground.ut2.ut02ex06form.domain.PlayerModel
 import com.tijanidian.pmpd_playground.ut2.ut02ex06form.domain.PlayerModelFootball
 import java.io.File
 
@@ -10,49 +9,46 @@ class PlayerLocalData(
     private val context: Context,
     private val serializer: JsonSerializer
 ) {
-    private lateinit var customerFile:File
+    private val playerFile: File by lazy { buildFile() }
 
-    private fun buildFile() {
-        customerFile = File(context.filesDir, AAD_PLAYER)
-        if (!customerFile.exists()) {
-            customerFile.createNewFile()
+    private fun buildFile():File {
+        val file = File(context.filesDir, AAD_PLAYER)
+        if (!file.exists()) {
+            file.createNewFile()
         }
+        return file
     }
-    private fun getFile(fileName: String) {
-        if(!this::customerFile.isInitialized){
-            buildFile()
-        }
-    }
+
 
 
     fun save(playerModelFootball: PlayerModelFootball){
         val player=fetch().toMutableList()
         player.add(playerModelFootball)
+        save(player)
 
     }
 
     fun save(playerModelFootball: List<PlayerModelFootball>){
         deleteFile()
-        playerModelFootball.forEach {
-            save(it)
+        playerModelFootball.map{
+            playerFile.appendText(serializer.toJson(it,PlayerModelFootball::class.java)+System.lineSeparator())
         }
     }
 
 
     fun fetch():List<PlayerModelFootball>{
-        val file=getFile(AAD_PLAYER)
         val players:MutableList<PlayerModelFootball> = mutableListOf()
-        val lines=customerFile.readLines()
-        lines.map {
-            val playerModel=serializer.fromJson(it,PlayerModelFootball::class.java)
+        val lines=playerFile.readLines()
+        lines.map {line->
+            val playerModel=serializer.fromJson(line,PlayerModelFootball::class.java)
             players.add(playerModel)
         }
         return players
     }
 
     fun deleteFile() {
-        if (customerFile.exists()) {
-            customerFile.delete()
+        if (playerFile.exists()) {
+            playerFile.delete()
         }
     }
 
