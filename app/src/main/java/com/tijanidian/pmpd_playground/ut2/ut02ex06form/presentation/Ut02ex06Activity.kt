@@ -6,7 +6,9 @@ import android.view.Menu
 import android.view.MenuInflater
 import android.view.MenuItem
 import androidx.fragment.app.Fragment
+import com.google.gson.Gson
 import com.tijanidian.pmpd_playground.R
+import com.tijanidian.pmpd_playground.commons.serializer.GsonSerializer
 import com.tijanidian.pmpd_playground.databinding.ActivityUt02ex06Binding
 import com.tijanidian.pmpd_playground.ut2.ut02ex06form.data.PlayerLocalData
 import com.tijanidian.pmpd_playground.ut2.ut02ex06form.domain.PlayerModel
@@ -17,6 +19,10 @@ class Ut02ex06Activity : AppCompatActivity() {
 
     private lateinit var playerLocalData: PlayerLocalData
 
+    private val localData: PlayerLocalData by lazy {
+        PlayerLocalData(this,GsonSerializer(Gson()))
+    }
+
     private val binding: ActivityUt02ex06Binding by lazy {
         ActivityUt02ex06Binding.inflate(layoutInflater)
     }
@@ -26,7 +32,7 @@ class Ut02ex06Activity : AppCompatActivity() {
         setContentView(binding.root)
         loadForm()
         setupToolbar()
-        //testFile()
+        testFile()
     }
 
     private fun setupToolbar() {
@@ -79,10 +85,11 @@ class Ut02ex06Activity : AppCompatActivity() {
 
 
     fun testFile(){
-                File(this.filesDir, PlayerLocalData.AAD_PLAYER)
-                playerLocalData.save(PlayerModelFootball(1,"Ramoncin","Madrid","H","Delantero","Portero"))
-                playerLocalData.save(PlayerModelFootball(2,"Pepe","Castilla y león","H","Delantero","Portero"))
+                val player1=PlayerModelFootball(1,"Ramoncin","Madrid","H","Delantero","Portero")
+        Thread{
+            localData.save(player1)
 
+        }.start()
 
 
     }

@@ -18,6 +18,11 @@ class PlayerLocalData(
             customerFile.createNewFile()
         }
     }
+    private fun getFile(fileName: String) {
+        if(!this::customerFile.isInitialized){
+            buildFile()
+        }
+    }
 
 
     fun save(playerModelFootball: PlayerModelFootball){
@@ -35,6 +40,7 @@ class PlayerLocalData(
 
 
     fun fetch():List<PlayerModelFootball>{
+        val file=getFile(AAD_PLAYER)
         val players:MutableList<PlayerModelFootball> = mutableListOf()
         val lines=customerFile.readLines()
         lines.map {
