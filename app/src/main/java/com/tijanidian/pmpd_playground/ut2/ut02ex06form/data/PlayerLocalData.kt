@@ -21,7 +21,7 @@ class PlayerLocalData(
         return file
     }
 
-    override suspend fun save(playerModelFootball: SavePlayerUseCase.Param){
+    override suspend fun save(playerModelFootball: PlayerModelFootball){
         val player=fetch().toMutableList()
         player.add(playerModelFootball)
         save(player)
@@ -55,6 +55,12 @@ class PlayerLocalData(
         const val AAD_PLAYER: String = "player_list.txt"
     }
 
+    
 
 
 }
+
+private fun <E> MutableList<E>.add(element: SavePlayerUseCase.Param) {
+
+}
+

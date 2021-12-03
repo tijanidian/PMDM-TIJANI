@@ -13,7 +13,7 @@ import com.tijanidian.pmpd_playground.R
 import com.tijanidian.pmpd_playground.commons.serializer.GsonSerializer
 import com.tijanidian.pmpd_playground.databinding.ActivityUt02ex06Binding
 import com.tijanidian.pmpd_playground.ut2.ut02ex06form.data.PlayerLocalData
-import com.tijanidian.pmpd_playground.ut2.ut02ex06form.domain.PlayerModel
+
 import com.tijanidian.pmpd_playground.ut2.ut02ex06form.domain.PlayerModelFootball
 import com.tijanidian.pmpd_playground.ut2.ut02ex06form.domain.SavePlayerUseCase
 import com.tijanidian.pmpd_playground.ut2.ut02ex06form.presentation.ryceclerview.PlayerAdapter
@@ -22,9 +22,7 @@ import java.io.File
 
 class Ut02ex06Activity : AppCompatActivity() {
 
-    private val viewModel=FromFragmentViewModel(SavePlayerUseCase(PlayerLocalData(applicationContext,GsonSerializer(
-        Gson()
-    ))))
+
 
     private val localData: PlayerLocalData by lazy {
         PlayerLocalData(this,GsonSerializer(Gson()))
@@ -40,7 +38,7 @@ class Ut02ex06Activity : AppCompatActivity() {
         setContentView(binding.root)
         loadForm()
         setupToolbar()
-
+        testFile()
 
     }
 
@@ -92,19 +90,17 @@ class Ut02ex06Activity : AppCompatActivity() {
         fragmentTransition.commit()
     }
 
-    /**
-     * Empleado para probar el funcionamiento de la fichero
 
     fun testFile(){
-                val player1=PlayerModelFootball(1,"Tijani","Dian","Castilla y león","H","Delantero")
+                val player1=PlayerModelFootball(1,"Tijani","Dian","Castilla y león","H","Delantero","Defensa")
         Thread{
-            localData.save(player1)
+            localData.savePlayer(player1)
 
         }.start()
 
         fetch()
     }
-     */
+
 
     fun fetch(){
         val fetch=localData.fetch()
