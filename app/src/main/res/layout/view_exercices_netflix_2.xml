@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/greey"
+    android:orientation="vertical">
+
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/banner_view_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/black"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingStart="@dimen/margin_left"
+        android:paddingTop="@dimen/padding_top">
+
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/profile_image"
+            style="@style/IconView"
+            tools:src="@tools:sample/avatars" />
+
+        <TextView
+            style="@style/TittleView"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginStart="@dimen/margin_left"
+            android:text="@string/text_top_banner_1"
+            android:textColor="@color/white" />
+
+        <TextView
+            style="@style/TittleView"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginStart="@dimen/margin_left"
+            android:text="@string/text_top_banner_2" />
+
+        <TextView
+            style="@style/TittleView"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginStart="@dimen/margin_left"
+            android:text="@string/text_top_banner_3"
+            android:textColor="@color/white" />
+
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+    <RelativeLayout
+        android:id="@+id/relative_view_popular"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/banner_view_1">
+
+        <TextView
+            android:id="@+id/category_description_popular"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_left"
+            android:paddingTop="@dimen/padding_top"
+            android:text="@string/text_row1"
+            android:textColor="@color/white" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/avatar_top_ms"
+            style="@style/AvatarView"
+            android:layout_marginStart="@dimen/margin_Left_Icon"
+            android:layout_marginEnd="@dimen/margin_Right_Icon"
+            android:layout_below="@id/category_description_popular"
+            tools:src="@tools:sample/avatars" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/avatar_top_dog"
+            style="@style/AvatarView"
+            android:layout_below="@id/category_description_popular"
+            android:layout_marginStart="@dimen/margin_Left_Icon"
+            android:layout_marginEnd="@dimen/margin_Right_Icon"
+            android:layout_toRightOf="@id/avatar_top_ms"
+            tools:src="@tools:sample/avatars" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/avatar_top_cat"
+            style="@style/AvatarView"
+            android:layout_below="@id/category_description_popular"
+            android:layout_marginStart="@dimen/margin_Left_Icon"
+            android:layout_marginEnd="@dimen/margin_Right_Icon"
+            android:layout_toEndOf="@id/avatar_top_dog"
+            tools:src="@tools:sample/avatars" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relative_view_trend"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/relative_view_popular">
+
+        <TextView
+            android:id="@+id/category_description_trend"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_left"
+            android:paddingTop="@dimen/padding_top"
+            android:text="@string/text_row2"
+            android:textColor="@color/white" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/avatar_woman_athlete"
+            style="@style/AvatarView"
+            android:layout_below="@id/category_description_trend"
+            android:layout_marginStart="@dimen/margin_Left_Icon"
+            android:layout_marginEnd="@dimen/margin_Right_Icon"
+            tools:src="@tools:sample/avatars" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/avatar_man_athlete"
+            style="@style/AvatarView"
+            android:layout_below="@id/category_description_trend"
+            android:layout_marginStart="@dimen/margin_Left_Icon"
+            android:layout_marginEnd="@dimen/margin_Right_Icon"
+            android:layout_toEndOf="@id/avatar_woman_athlete"
+            tools:src="@tools:sample/avatars" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/avatar_yellow_jacket"
+            style="@style/AvatarView"
+            android:layout_below="@id/category_description_trend"
+            android:layout_marginStart="@dimen/margin_Left_Icon"
+            android:layout_marginEnd="@dimen/margin_Right_Icon"
+            android:layout_toRightOf="@id/avatar_man_athlete"
+            tools:src="@tools:sample/avatars" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relative_view_again"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/relative_view_trend">
+
+        <TextView
+            android:id="@+id/category_description_again"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_left"
+            android:paddingTop="@dimen/padding_top"
+            android:text="@string/text_row3"
+            android:textColor="@color/white" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/avatar_green_jacket"
+            style="@style/AvatarView"
+            android:layout_below="@id/category_description_again"
+            android:layout_marginStart="@dimen/margin_Left_Icon"
+            android:layout_marginEnd="@dimen/margin_Right_Icon"
+            tools:src="@tools:sample/avatars" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/avatar_man_cap"
+            style="@style/AvatarView"
+            android:layout_below="@id/category_description_again"
+            android:layout_toEndOf="@id/avatar_green_jacket"
+            tools:src="@tools:sample/avatars"
+            android:layout_marginStart="@dimen/margin_Left_Icon"
+            android:layout_marginEnd="@dimen/margin_Right_Icon"/>
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/avatar_woman_happy"
+            style="@style/AvatarView"
+            android:layout_below="@id/category_description_again"
+            android:layout_toEndOf="@id/avatar_man_cap"
+            tools:src="@tools:sample/avatars"
+            android:layout_marginStart="@dimen/margin_Left_Icon"
+            android:layout_marginEnd="@dimen/margin_Right_Icon"/>
+
+    </RelativeLayout>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:background="@color/black"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/home_icon"
+            style="@style/IconView"
+            android:layout_marginStart="@dimen/button_icon_left"
+            android:layout_marginEnd="@dimen/button_icon_right"
+            android:src="@drawable/ic_home_black_24dp"
+            tools:ignore="MissingConstraints" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/search_icon"
+            style="@style/IconView"
+            android:layout_marginStart="@dimen/button_icon_left"
+            android:layout_marginEnd="@dimen/button_icon_right"
+            android:src="@drawable/ic_search_black_24dp"
+            tools:ignore="MissingConstraints" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/play_icon"
+            style="@style/IconView"
+            android:layout_marginStart="@dimen/button_icon_left"
+            android:layout_marginEnd="@dimen/button_icon_right"
+            android:src="@drawable/ic_play_black_24dp"
+            tools:ignore="MissingConstraints" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/download_icon"
+            style="@style/IconView"
+            android:layout_marginStart="@dimen/button_icon_left"
+            android:layout_marginEnd="@dimen/button_icon_right"
+            android:src="@drawable/ic_file_download_black_24dp"
+            tools:ignore="MissingConstraints" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/stack_icon"
+            style="@style/IconView"
+            android:layout_marginStart="@dimen/button_icon_left"
+            android:layout_marginEnd="@dimen/button_icon_right"
+            android:src="@drawable/ic_stack_black_24dp"
+            tools:ignore="MissingConstraints" />
+
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+</RelativeLayout>

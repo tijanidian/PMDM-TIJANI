@@ -1,0 +1,287 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/greey">
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/view_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/black"
+        android:orientation="horizontal"
+        android:padding="@dimen/padding_left">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/avatar_icon"
+            style="@style/IconView"
+            android:src="@drawable/ic_error_outline"
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="@string/name_auto_download"
+            android:textAlignment="center"
+            android:textColor="@color/white" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="@string/name_activity"
+            android:textAlignment="center"
+            android:textColor="@color/blue" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/icon_pincil"
+                style="@style/IconView"
+                android:layout_alignParentEnd="true"
+                android:paddingStart="@dimen/padding_left"
+                android:src="@drawable/ic_pen"
+                tools:ignore="MissingConstraints" />
+
+        </RelativeLayout>
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <!--Primera Fila-->
+    <RelativeLayout
+        android:id="@+id/relative_view_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/view_header">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/cover_image_you"
+            style="@style/AvatarView"
+            android:scaleType="centerCrop"
+            android:src="@drawable/you"
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:id="@+id/film_text_you"
+            style="@style/TittleView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_left"
+            android:layout_toEndOf="@id/cover_image_you"
+            tools:text="@string/name_img_netf_1" />
+
+        <TextView
+            android:id="@+id/descr_text_you"
+            style="@style/TittleView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/film_text_you"
+            android:layout_marginStart="@dimen/margin_left"
+            android:layout_toEndOf="@id/cover_image_you"
+            android:text="@string/desc_img_netf_1" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/arrow_icon"
+            style="@style/IconView"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic_arrow"
+            tools:ignore="MissingConstraints" />
+
+    </RelativeLayout>
+
+    <!-- Segunda Fila-->
+    <RelativeLayout
+        android:id="@+id/relative_view_2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="@dimen/padding_top"
+        android:layout_below="@id/relative_view_1">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/cover_image_umbrella"
+            style="@style/AvatarView"
+            android:scaleType="centerCrop"
+            android:src="@drawable/umbrella_academy"
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:id="@+id/film_text_umbrella"
+            style="@style/TittleView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_left"
+            android:layout_toEndOf="@id/cover_image_umbrella"
+            tools:text="@string/name_img_netf_2" />
+
+        <TextView
+            android:id="@+id/desc_umbrella"
+            style="@style/TittleView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/film_text_umbrella"
+            android:layout_marginStart="@dimen/margin_left"
+            android:layout_toEndOf="@id/cover_image_umbrella"
+            android:text="@string/desc_img_netf_2" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/arrow_icon_umbrella"
+            style="@style/IconView"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic_arrow"
+            tools:ignore="MissingConstraints" />
+
+    </RelativeLayout>
+
+    <!-- Tercera Fila-->
+    <RelativeLayout
+        android:paddingTop="@dimen/padding_top"
+        android:id="@+id/relative_view_3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/relative_view_2">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/cover_image_elite"
+            style="@style/AvatarView"
+            android:scaleType="centerCrop"
+            android:src="@drawable/elite"
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:id="@+id/film_text_elite"
+            style="@style/TittleView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_left"
+            android:layout_toEndOf="@id/cover_image_elite"
+            tools:text="@string/name_img_netf_3" />
+
+        <TextView
+            android:id="@+id/desc_elite"
+            style="@style/TittleView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/film_text_elite"
+            android:layout_marginStart="@dimen/padding_left"
+            android:layout_toEndOf="@id/cover_image_elite"
+            android:text="@string/desc_img_netf_3" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/icon_time_elite"
+            style="@style/IconView"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic_watch_later_black_24dp"
+            tools:ignore="MissingConstraints" />
+
+    </RelativeLayout>
+
+
+    <!--Cuarta fila-->
+
+    <RelativeLayout
+        android:paddingTop="@dimen/padding_top"
+        android:id="@+id/relative_view_4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/relative_view_3">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/cover_image_you_season2"
+            style="@style/AvatarView"
+            android:scaleType="centerCrop"
+            android:src="@drawable/willoughby"
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:id="@+id/film_text_willoughby"
+            style="@style/TittleView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_left"
+            android:layout_toEndOf="@id/cover_image_you_season2"
+            tools:text="@string/name_img_netf_4" />
+
+        <TextView
+            android:id="@+id/desc_willoughby"
+            style="@style/TittleView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/film_text_willoughby"
+            android:layout_marginStart="@dimen/padding_left"
+            android:layout_toEndOf="@id/cover_image_you_season2"
+            android:text="@string/desc_img_netf_4"
+            android:textColor="@color/white" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/icon_time_willoughby"
+            style="@style/IconView"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic_mobile_friendly_black_24dp"
+            tools:ignore="MissingConstraints" />
+
+    </RelativeLayout>
+
+    <!--Botones-->
+
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:background="@color/black"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/home_icon"
+            style="@style/IconView"
+            android:layout_marginStart="@dimen/button_icon_left"
+            android:layout_marginEnd="@dimen/button_icon_right"
+            android:src="@drawable/ic_home_black_24dp"
+            tools:ignore="MissingConstraints" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/search_icon"
+            style="@style/IconView"
+            android:layout_marginStart="@dimen/button_icon_left"
+            android:layout_marginEnd="@dimen/button_icon_right"
+            android:src="@drawable/ic_search_black_24dp"
+            tools:ignore="MissingConstraints" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/play_icon"
+            style="@style/IconView"
+            android:layout_marginStart="@dimen/button_icon_left"
+            android:layout_marginEnd="@dimen/button_icon_right"
+            android:src="@drawable/ic_play_black_24dp"
+            tools:ignore="MissingConstraints" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/download_icon"
+            style="@style/IconView"
+            android:layout_marginStart="@dimen/button_icon_left"
+            android:layout_marginEnd="@dimen/button_icon_right"
+            android:src="@drawable/ic_file_download_black_24dp"
+            tools:ignore="MissingConstraints" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/stack_icon"
+            style="@style/IconView"
+            android:layout_marginStart="@dimen/button_icon_left"
+            android:layout_marginEnd="@dimen/button_icon_right"
+            android:src="@drawable/ic_stack_black_24dp"
+            tools:ignore="MissingConstraints" />
+
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+</RelativeLayout>

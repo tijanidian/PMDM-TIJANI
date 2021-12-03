@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+tools:context="com.tijanidian.ex02_alerts_recyclerview.presentation.DetailAlertActivity">
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_marginTop="@dimen/padding_top"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.tijanidian.ex02_alerts_recyclerview.presentation.DetailAlertActivity">
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/main_bar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        android:elevation="4dp"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"/>
+
+    <ImageView
+        android:id="@+id/avatar_icon"
+        android:layout_width="@dimen/icon_width_medium"
+        android:layout_height="@dimen/icon_height_medium"
+        app:layout_constraintEnd_toStartOf="@+id/main_title"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:src="@drawable/ic_warning" />
+
+    <TextView
+        android:id="@+id/main_title"
+        style="@style/MainTextPlag"
+        android:layout_width="@dimen/max_height_plag"
+        android:layout_height="wrap_content"
+        android:textColor="@color/green_plagricola"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:text="@string/text_main_plag" />
+
+    <TextView
+        android:id="@+id/date_published"
+
+        android:layout_width="@dimen/max_height_plag"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="Ficheros descargables"
+        android:textColor="@color/green_plagricola"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.175"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/main_title" />
+
+    <TextView
+        android:id="@+id/separator"
+        android:layout_width="@dimen/max_width_separator"
+        android:layout_height="@dimen/separator_height"
+        android:layout_marginTop="@dimen/margin_top_separator"
+        android:background="@color/green_plagricola"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/date_published" />
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/linear_separator"
+        android:layout_marginTop="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/date_published"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:stretchColumns="2">
+
+            <TableRow>
+
+                <TextView
+                    android:padding="@dimen/padding_top"
+                    android:text="Nota informativa" />
+
+                <ImageView
+                    android:id="@+id/first_icon_pdf"
+                    android:layout_marginLeft="@dimen/margin_left"
+                    android:layout_marginTop="@dimen/padding_top"
+                    android:layout_width="@dimen/icon_width_medium"
+                    android:layout_height="@dimen/icon_height_medium"
+                    android:src="@drawable/ic_pdf_" />
+
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:padding="@dimen/padding_top"
+                    android:text="Recomendaciones del manejo. Periodo estival \n 2021" />
+
+                <ImageView
+                    android:id="@+id/secon_icon_pdf"
+                    android:layout_marginTop="@dimen/padding_top"
+                    android:layout_marginLeft="@dimen/margin_left"
+                    android:layout_width="@dimen/icon_width_medium"
+                    android:layout_height="@dimen/icon_height_medium"
+                    android:src="@drawable/ic_pdf_" />
+            </TableRow>
+        </TableLayout>
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <TextView
+        android:id="@+id/secon_info_date_published"
+        android:layout_width="@dimen/max_height_plag"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_top"
+        android:textColor="@color/green_plagricola"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.175"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linear_separator"
+        android:text="Contenido del aviso" />
+
+    <TextView
+        android:id="@+id/second_separator"
+        android:layout_width="@dimen/max_width_separator"
+        android:layout_height="@dimen/separator_height"
+        android:layout_marginTop="@dimen/margin_top_separator"
+        android:background="@color/green_plagricola"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/secon_info_date_published" />
+
+
+    <TextView
+        android:padding="@dimen/padding_top"
+        android:id="@+id/body_container"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_top"
+        android:text="Para Agricultores \n\nCOSECHA Y POST-COSECHA \n\nCosechar lo más superficial posible \n\nRetirar (laboreo) del rastrojo cuando las condiciones \ndel suelo lo permitan. Repetir (pases más someros) si se observan colonias antes de la siembra"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/secon_info_date_published" />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>
