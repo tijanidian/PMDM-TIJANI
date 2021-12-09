@@ -7,7 +7,7 @@ data class PlayerViewState(
     val name:String,
     val community:String,
     val sex:String,
-    val firtsPosition:String,
+    val firstPosition:String,
     val secondPosition:String,
 ){
     companion object{
@@ -15,8 +15,8 @@ data class PlayerViewState(
             playerModelFootball.idPlayer,
             playerModelFootball.name,
             playerModelFootball.community,
-            playerModelFootball.sex,
-            playerModelFootball.firtsPosition,
+            playerModelFootball.gender,
+            playerModelFootball.firstPosition,
             playerModelFootball.secondPosition
         )
     }

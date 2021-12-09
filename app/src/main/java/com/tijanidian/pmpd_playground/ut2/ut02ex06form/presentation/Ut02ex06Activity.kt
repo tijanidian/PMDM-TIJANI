@@ -1,32 +1,17 @@
 package com.tijanidian.pmpd_playground.ut2.ut02ex06form.presentation
 
-import android.content.Context
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.util.Log
 import android.view.Menu
 import android.view.MenuInflater
 import android.view.MenuItem
 import androidx.fragment.app.Fragment
-import com.google.gson.Gson
 import com.tijanidian.pmpd_playground.R
-import com.tijanidian.pmpd_playground.commons.serializer.GsonSerializer
 import com.tijanidian.pmpd_playground.databinding.ActivityUt02ex06Binding
-import com.tijanidian.pmpd_playground.ut2.ut02ex06form.data.PlayerLocalData
 
-import com.tijanidian.pmpd_playground.ut2.ut02ex06form.domain.PlayerModelFootball
-import com.tijanidian.pmpd_playground.ut2.ut02ex06form.domain.SavePlayerUseCase
-import com.tijanidian.pmpd_playground.ut2.ut02ex06form.presentation.ryceclerview.PlayerAdapter
-import com.tijanidian.pmpd_playground.ut2.ut02ex06form.presentation.viewmodel.FromFragmentViewModel
-import java.io.File
 
 class Ut02ex06Activity : AppCompatActivity() {
 
-
-
-    private val localData: PlayerLocalData by lazy {
-        PlayerLocalData(this,GsonSerializer(Gson()))
-    }
 
     private val binding: ActivityUt02ex06Binding by lazy {
         ActivityUt02ex06Binding.inflate(layoutInflater)
@@ -38,7 +23,7 @@ class Ut02ex06Activity : AppCompatActivity() {
         setContentView(binding.root)
         loadForm()
         setupToolbar()
-        testFile()
+
 
     }
 
@@ -56,9 +41,8 @@ class Ut02ex06Activity : AppCompatActivity() {
     }
 
 
-
-    private fun loadForm(){
-        replaceFragment(binding.containerFragment.id,FormFragment.createInstance())
+    private fun loadForm() {
+        replaceFragment(binding.containerFragment.id, FormFragment.createInstance())
     }
 
     override fun onCreateOptionsMenu(menu: Menu): Boolean {
@@ -91,24 +75,8 @@ class Ut02ex06Activity : AppCompatActivity() {
     }
 
 
-    fun testFile(){
-                val player1=PlayerModelFootball(1,"Tijani","Dian","Castilla y león","H","Delantero","Defensa")
-        Thread{
-            localData.savePlayer(player1)
-
-        }.start()
-
-        fetch()
+    private fun savePlayerFile() {
+        //viewModel.savePlayer()
     }
-
-
-    fun fetch(){
-        val fetch=localData.fetch()
-        Log.d("@dev","$fetch")
-    }
-
-   private fun savePlayerFile(){
-       //viewModel.savePlayer()
-   }
 
 }

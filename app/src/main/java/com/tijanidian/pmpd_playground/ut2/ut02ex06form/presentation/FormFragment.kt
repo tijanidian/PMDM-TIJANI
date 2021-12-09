@@ -8,17 +8,20 @@ import androidx.fragment.app.Fragment
 import com.google.gson.Gson
 import com.tijanidian.pmpd_playground.commons.serializer.GsonSerializer
 import com.tijanidian.pmpd_playground.databinding.ActivityFormFragmentBinding
-import com.tijanidian.pmpd_playground.ut2.ut02ex06form.data.PlayerLocalData
+import com.tijanidian.pmpd_playground.ut2.ut02ex06form.data.local.PlayerLocalData
 import com.tijanidian.pmpd_playground.ut2.ut02ex06form.domain.SavePlayerUseCase
 import com.tijanidian.pmpd_playground.ut2.ut02ex06form.presentation.viewmodel.FromFragmentViewModel
 
 class FormFragment : Fragment() {
     private lateinit var binding: ActivityFormFragmentBinding
 
+
     private val viewModel: FromFragmentViewModel by lazy {
-        FromFragmentViewModel(SavePlayerUseCase(PlayerLocalData(requireContext(),
+        FromFragmentViewModel(SavePlayerUseCase(
+            PlayerLocalData(requireContext(),
             GsonSerializer(Gson())
-        )))
+        )
+        ))
     }
     override fun onCreateView(
         inflater: LayoutInflater,
@@ -36,12 +39,12 @@ class FormFragment : Fragment() {
 
     private fun actionSave(){
         binding.actionSavePlayer.setOnClickListener {
-            val player=savePlayer()
+            val player=getPlayerParams()
             viewModel.savePlayer(player)
         }
     }
 
-    private fun savePlayer():SavePlayerUseCase.Param{
+    private fun getPlayerParams():SavePlayerUseCase.Param{
         return SavePlayerUseCase.Param(
             binding.inputLastName.text.toString(),
             binding.inputName.text.toString(),

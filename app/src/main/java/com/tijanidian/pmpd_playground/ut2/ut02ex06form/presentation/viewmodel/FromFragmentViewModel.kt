@@ -8,9 +8,8 @@ import kotlinx.coroutines.launch
 
 class FromFragmentViewModel(private val savePlayerUseCase: SavePlayerUseCase) : ViewModel() {
 
-   fun savePlayer(param: SavePlayerUseCase.Param)=viewModelScope.launch (Dispatchers.Main){
+   fun savePlayer(param: SavePlayerUseCase.Param)=viewModelScope.launch (Dispatchers.IO){
        savePlayerUseCase.execute(param)
-
    }
 
 }

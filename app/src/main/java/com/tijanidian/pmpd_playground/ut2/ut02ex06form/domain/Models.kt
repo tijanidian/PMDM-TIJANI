@@ -5,7 +5,7 @@ data class PlayerModelFootball(
     val name:String,
     val surname:String,
     val community:String,
-    val sex:String,
-    val firtsPosition:String,
+    val gender:String,
+    val firstPosition:String,
     val secondPosition:String,
 )
