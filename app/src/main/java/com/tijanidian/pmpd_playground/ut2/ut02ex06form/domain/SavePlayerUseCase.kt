@@ -6,9 +6,9 @@ class SavePlayerUseCase(private val repository: PlayerRepository) {
         repository.save(param.toModel())
     }
 
-    data class Param(val idPlayer:Int, val name: String, val surname: String, val comunity:String,val gender:String, val firstPosition:String, val seconPosition:String){
+    data class Param( val name: String, val surname: String, val comunity:String,val gender:String, val firstPosition:String, val seconPosition:String){
 
-        fun toModel() = PlayerModelFootball(idPlayer,name,surname,comunity,gender,firstPosition,seconPosition)
+        fun toModel() = PlayerModelFootball(name,surname,comunity,gender,firstPosition,seconPosition)
 
     }
 }
