@@ -38,4 +38,16 @@
     <string name="form_title">Formulario</string>
     <string name="list_title">Lista</string>
 
+
+    <string name="opcion_woman">Woman</string>
+    <string name="option_man">Man</string>
+
+    <string name="position_portero">portero</string>
+    <string name="position_defensa">defensa</string>
+    <string name="position_mediocentro">centrocampista</string>
+    <string name="position_delantero">delantero</string>
+
+
+
+
 </resources>
