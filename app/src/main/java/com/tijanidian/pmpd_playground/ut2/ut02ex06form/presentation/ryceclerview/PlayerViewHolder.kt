@@ -11,7 +11,7 @@ class PlayerViewHolder(private val view:View) : RecyclerView.ViewHolder(view) {
     fun render(playerViewState: PlayerViewState){
         bind.infoName.text=playerViewState.name
         bind.infoCommunity.text=playerViewState.community
-        bind.infoGender.text=playerViewState.sex
+        bind.infoGender.text=playerViewState.gender
         bind.infoPosition.text=playerViewState.firstPosition
         bind.infoSeconPosition.text=playerViewState.secondPosition
     }

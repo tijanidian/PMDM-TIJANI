@@ -24,20 +24,12 @@ class Ut02ex06Activity : AppCompatActivity() {
         loadForm()
         setupToolbar()
 
-
     }
 
     private fun setupToolbar() {
         setSupportActionBar(binding.mainBar)
         supportActionBar?.title = getString(R.string.form_title)
 
-    }
-
-
-    fun savePlayer() {
-        //binding.name.text
-
-        //val param:SavePlayerUseCase
     }
 
 
@@ -55,10 +47,10 @@ class Ut02ex06Activity : AppCompatActivity() {
         return when (item.itemId) {
             R.id.action_add -> {
                 if (supportActionBar?.title == getString(R.string.form_title)) {
-                    replaceFragment(binding.containerFragment.id, FormFragment.createInstance())
+                    replaceFragment(binding.containerFragment.id, ListFragment.createInstance())
                     supportActionBar?.title = getString(R.string.list_title)
                 } else {
-                    replaceFragment(binding.containerFragment.id, ListFragment.createInstance())
+                    replaceFragment(binding.containerFragment.id, FormFragment.createInstance())
                     supportActionBar?.title = getString(R.string.form_title)
                 }
                 true

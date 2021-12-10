@@ -9,23 +9,26 @@ import com.google.gson.Gson
 import com.tijanidian.pmpd_playground.R
 import com.tijanidian.pmpd_playground.commons.serializer.GsonSerializer
 import com.tijanidian.pmpd_playground.databinding.ActivityFormFragmentBinding
-import com.tijanidian.pmpd_playground.ut2.ut02ex06form.data.local.PlayerFileLocalSource
+import com.tijanidian.pmpd_playground.ut2.ut02ex06form.data.PlayerDataRepository
+import com.tijanidian.pmpd_playground.ut2.ut02ex06form.data.local.file.PlayerFileLocalSource
 import com.tijanidian.pmpd_playground.ut2.ut02ex06form.domain.SavePlayerUseCase
 import com.tijanidian.pmpd_playground.ut2.ut02ex06form.presentation.viewmodel.FromFragmentViewModel
 
 class FormFragment : Fragment() {
     private lateinit var binding: ActivityFormFragmentBinding
 
-
     private val viewModel: FromFragmentViewModel by lazy {
         FromFragmentViewModel(
             SavePlayerUseCase(
-                PlayerFileLocalSource(
-                    requireContext(),
-                    GsonSerializer(Gson())
+                PlayerDataRepository(
+                    PlayerFileLocalSource(
+                        requireContext(),
+                        GsonSerializer((Gson()))
+                    )
                 )
             )
         )
+
     }
 
     override fun onCreateView(
@@ -63,17 +66,15 @@ class FormFragment : Fragment() {
 
     }
 
-    private fun checkBoxGender() {
-        var opcionSelected: String = " "
-        val woman = binding.radioWoman.isChecked
-        val man = binding.radioMan.isChecked
+    private fun checkBoxGender(): MutableList<String> {
+        var opcionSelected = mutableListOf<String>()
 
-        if (woman) {
-            opcionSelected = (R.string.opcion_woman.toString())
+        if (binding.radioWoman.isChecked) {
+            opcionSelected.add((R.string.opcion_woman.toString()))
         } else {
-            opcionSelected = (R.string.option_man.toString())
+            opcionSelected.add(R.string.option_man.toString())
         }
-
+        return opcionSelected
     }
 
     private fun selectPositionPlayer(): MutableList<String> {

@@ -1,4 +1,4 @@
-package com.tijanidian.pmpd_playground.ut2.ut02ex06form.data
+package com.tijanidian.pmpd_playground.ut2.ut02ex06form.data.local
 
 import com.tijanidian.pmpd_playground.ut2.ut02ex06form.domain.PlayerModelFootball
 

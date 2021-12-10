@@ -1,8 +1,8 @@
-package com.tijanidian.pmpd_playground.ut2.ut02ex06form.data.local
+package com.tijanidian.pmpd_playground.ut2.ut02ex06form.data.local.file
 
 import android.content.Context
 import com.tijanidian.pmpd_playground.commons.serializer.GsonSerializer
-import com.tijanidian.pmpd_playground.ut2.ut02ex06form.data.PlayerLocalSource
+import com.tijanidian.pmpd_playground.ut2.ut02ex06form.data.local.PlayerLocalSource
 import com.tijanidian.pmpd_playground.ut2.ut02ex06form.domain.PlayerModelFootball
 import java.io.File
 
