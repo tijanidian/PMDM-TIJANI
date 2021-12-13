@@ -29,7 +29,7 @@
             android:hint="Apellidos" />
 
         <androidx.appcompat.widget.AppCompatSpinner
-            android:id="@+id/communities_spinner"
+            android:id="@+id/select_communities"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="@dimen/padding_top"

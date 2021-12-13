@@ -55,7 +55,7 @@ class FormFragment : Fragment() {
     private fun getPlayerParams(): SavePlayerUseCase.Param {
         val name = binding.inputName.text.toString()
         val surname = binding.inputLastName.text.toString()
-        val community = binding.communitiesSpinner.selectedItem.toString()
+        val community = binding.selectCommunities.selectedItem.toString()
         val gender = checkBoxGender()
         val position = selectPositionPlayer()
 
@@ -70,9 +70,9 @@ class FormFragment : Fragment() {
         var opcionSelected = mutableListOf<String>()
 
         if (binding.radioWoman.isChecked) {
-            opcionSelected.add((R.string.opcion_woman.toString()))
+            opcionSelected.add((getString(R.string.opcion_woman)))
         } else {
-            opcionSelected.add(R.string.option_man.toString())
+            opcionSelected.add(getString(R.string.option_man))
         }
         return opcionSelected
     }
@@ -85,18 +85,17 @@ class FormFragment : Fragment() {
         val delantero = binding.ckDelantero.isChecked
 
         if (portero) {
-            position.add(R.string.position_portero.toString())
+            position.add(getString(R.string.position_portero))
         }
         if (mediocentro) {
-            position.add(R.string.position_mediocentro.toString())
+            position.add(getString(R.string.position_mediocentro))
         }
         if (defensa) {
-            position.add(R.string.position_defensa.toString())
+            position.add(getString(R.string.position_defensa))
         }
         if (delantero) {
-            position.add(R.string.position_delantero.toString())
+            position.add(getString(R.string.position_delantero))
         }
-
         return position
     }
 
