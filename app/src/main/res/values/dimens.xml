@@ -10,11 +10,11 @@
     <dimen name="thumbnails_width_big">100dp</dimen>
     <dimen name="thumbnails_height_bib">100dp</dimen>
 
-    <dimen name="icon_width">42dp</dimen>
-    <dimen name="icon_height">42dp</dimen>
+    <dimen name="icon_width">32dp</dimen>
+    <dimen name="icon_height">32dp</dimen>
 
-    <dimen name="icon_width_medium">24dp</dimen>
-    <dimen name="icon_height_medium">24dp</dimen>
+    <dimen name="icon_width_medium">32dp</dimen>
+    <dimen name="icon_height_medium">32dp</dimen>
 
     <dimen name="icon_width_small">20sp</dimen>
     <dimen name="icon_height_small">20sp</dimen>
@@ -58,10 +58,22 @@
     <dimen name="icon_glovo_width">120sp</dimen>
     <dimen name="icon_glovo_height">70sp</dimen>
 
-
     <dimen name="elevation_card">4dp</dimen>
 
+    <!--Text size main plag-->
+    <dimen name="text_size_plag_main">18sp</dimen>
 
+    <!--Text Size icon glovo-->
+    <dimen name="max_height_plag">320dp</dimen>
 
+    <dimen name="corner_card">4dp</dimen>
+
+    <dimen name="card_elevation">3dp</dimen>
+
+    <!--Detail Activity-->
+    <dimen name="margin_top">28dp</dimen>
+    <dimen name="margin_top_separator">5dp</dimen>
+    <dimen name="separator_height">1dp</dimen>
+    <dimen name="max_width_separator">380dp</dimen>
 
 </resources>
