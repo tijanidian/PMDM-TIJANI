@@ -58,6 +58,7 @@
     <dimen name="icon_glovo_width">120sp</dimen>
     <dimen name="icon_glovo_height">70sp</dimen>
 
+    <dimen name="elevation_card">4dp</dimen>
 
     <!--Text size main plag-->
     <dimen name="text_size_plag_main">18sp</dimen>

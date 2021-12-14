@@ -1,4 +1,5 @@
 
+
 <resources>
     <string name="app_name">PMPD-PlayGround</string>
     <string name="name_image">Nombre de la imagen</string>
@@ -31,6 +32,24 @@
     <string name="glovo_secundario_text">Las más famosas</string>
     <string name="label_price">2,50€</string>
     <string name="text_right_icon">20-25 min</string>
+
+
+
+    <!--Form players-->
+
+    <string name="form_title">Formulario</string>
+    <string name="list_title">Lista</string>
+
+
+    <string name="opcion_woman">Woman</string>
+    <string name="option_man">Man</string>
+
+    <string name="position_portero">portero</string>
+    <string name="position_defensa">defensa</string>
+    <string name="position_mediocentro">centrocampista</string>
+    <string name="position_delantero">delantero</string>
+
+
 
     <!--Plagricola-->
     <string name="text_main_plag">Recomendaciones de manejo. periodo estival 2021</string>
