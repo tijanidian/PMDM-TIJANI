@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.tijanidian.ex02_alerts_recyclerview.presentation.Ut02AlertRecyclerActivity">
+
+    <FrameLayout
+        android:id="@+id/rycler_example"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/list_alerts"
+        android:layout_width="match_parent"
+        tools:listitem="@layout/view_item_ut02_recycler"
+        android:layout_height="match_parent"/>
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/main_bar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        android:elevation="4dp"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"/>
+    <include
+        android:id="@+id/alerts_toolbar"
+        layout="@layout/view_custom_toolbar"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
