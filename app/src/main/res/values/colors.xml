@@ -3,17 +3,17 @@
 
     <color name="greey">#222222</color>
     <color name="blue">#1784F3</color>
-
+    <color name="green_plagricola">#4CAF50</color>
 
     <!-- Styles Colors Theme -->
-    <color name="primaryColor">#304ffe</color>
-    <color name="primaryLightColor">#7a7cff</color>
-    <color name="primaryDarkColor">#0026ca</color>
-    <color name="primaryTextColor">#ffffff</color>
-    <color name="secondaryColor">#00c853</color>
-    <color name="secondaryLightColor">#5efc82</color>
-    <color name="secondaryDarkColor">#009624</color>
-    <color name="secondaryTextColor">#000000</color>
+    <color name="primaryColor">@color/green</color>
+    <color name="primaryLightColor">@color/light_green</color>
+    <color name="primaryDarkColor">@color/dark_green</color>
+    <color name="primaryTextColor">@color/white</color>
+    <color name="secondaryColor">@color/orange</color>
+    <color name="secondaryLightColor">@color/light_orange</color>
+    <color name="secondaryDarkColor">@color/dark_orange</color>
+    <color name="secondaryTextColor">@color/black</color>
 
     <!-- Hex. Colors -->
     <color name="green">#1b5e20</color>
@@ -30,4 +30,6 @@
     <color name="purple_700">#FF3700B3</color>
     <color name="teal_200">#FF03DAC5</color>
     <color name="teal_700">#FF018786</color>
+
+
 </resources>
