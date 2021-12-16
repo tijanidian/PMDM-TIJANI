@@ -3,7 +3,7 @@ package com.tijanidian.pmpd_playground.ut2.ut02ex06form.data.local.file
 import android.content.Context
 import com.tijanidian.pmpd_playground.commons.serializer.GsonSerializer
 import com.tijanidian.pmpd_playground.ut2.ut02ex06form.data.local.PlayerLocalSource
-import com.tijanidian.pmpd_playground.ut2.ut02ex06form.domain.PlayerModelFootball
+import com.tijanidian.pmpd_playground.ut2.ut02ex06form.domain.PlayerModel
 import java.io.File
 
 class PlayerFileLocalSource(
@@ -21,30 +21,30 @@ class PlayerFileLocalSource(
         return file
     }
 
-    override suspend fun save(playerModelFootball: PlayerModelFootball) {
+    override suspend fun save(playerModel: PlayerModel) {
         val player = fetch().toMutableList()
-        player.add(playerModelFootball)
+        player.add(playerModel)
         save(player)
 
     }
 
-    override suspend fun save(playerModelFootball: List<PlayerModelFootball>) {
+    override suspend fun save(playerModel: List<PlayerModel>) {
         deleteFile()
-        playerModelFootball.map {
+        playerModel.map {
             playerFile.appendText(
                 serializer.toJson(
                     it,
-                    PlayerModelFootball::class.java
+                    PlayerModel::class.java
                 ) + System.lineSeparator()
             )
         }
     }
 
-    override suspend fun fetch(): List<PlayerModelFootball> {
-        val players: MutableList<PlayerModelFootball> = mutableListOf()
+    override suspend fun fetch(): List<PlayerModel> {
+        val players: MutableList<PlayerModel> = mutableListOf()
         val lines = playerFile.readLines()
         lines.map { line ->
-            val playerModel = serializer.fromJson(line, PlayerModelFootball::class.java)
+            val playerModel = serializer.fromJson(line, PlayerModel::class.java)
             players.add(playerModel)
         }
         return players

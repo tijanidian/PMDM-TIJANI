@@ -8,14 +8,14 @@ import androidx.fragment.app.Fragment
 import com.google.gson.Gson
 import com.tijanidian.pmpd_playground.R
 import com.tijanidian.pmpd_playground.commons.serializer.GsonSerializer
-import com.tijanidian.pmpd_playground.databinding.ActivityFormFragmentBinding
+import com.tijanidian.pmpd_playground.databinding.FragmentFormBinding
 import com.tijanidian.pmpd_playground.ut2.ut02ex06form.data.PlayerDataRepository
 import com.tijanidian.pmpd_playground.ut2.ut02ex06form.data.local.file.PlayerFileLocalSource
 import com.tijanidian.pmpd_playground.ut2.ut02ex06form.domain.SavePlayerUseCase
 import com.tijanidian.pmpd_playground.ut2.ut02ex06form.presentation.viewmodel.FromFragmentViewModel
 
 class FormFragment : Fragment() {
-    private lateinit var binding: ActivityFormFragmentBinding
+    private lateinit var binding: FragmentFormBinding
 
     private val viewModel: FromFragmentViewModel by lazy {
         FromFragmentViewModel(
@@ -36,7 +36,7 @@ class FormFragment : Fragment() {
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
-        binding = ActivityFormFragmentBinding.inflate(inflater, container, false)
+        binding = FragmentFormBinding.inflate(inflater, container, false)
         return binding.root
     }
 

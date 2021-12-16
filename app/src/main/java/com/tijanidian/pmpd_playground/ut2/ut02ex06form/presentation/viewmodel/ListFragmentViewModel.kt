@@ -18,7 +18,7 @@ class ListFragmentViewModel(private val getPlayerUseCase: GetPlayerUseCase) : Vi
         MutableLiveData<List<PlayerViewState>>()
     }
 
-    fun getPlayer() = viewModelScope.launch(Dispatchers.Main) {
+    fun getPlayer() = viewModelScope.launch(Dispatchers.IO) {
         val fechPlayer = getPlayerUseCase.execute()
 
         _playerViewState.value = fechPlayer.map { player ->

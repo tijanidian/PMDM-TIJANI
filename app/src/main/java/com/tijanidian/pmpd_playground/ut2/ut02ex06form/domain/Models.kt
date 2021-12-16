@@ -1,6 +1,6 @@
 package com.tijanidian.pmpd_playground.ut2.ut02ex06form.domain
 
-data class PlayerModelFootball(
+data class PlayerModel(
     val name:String,
     val surname:String,
     val community:String,

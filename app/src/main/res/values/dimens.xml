@@ -2,8 +2,6 @@
 <resources>
     <dimen name="space_vertical">16dp</dimen>
     <dimen name="space_horizontal">8dp</dimen>
-
-
     <dimen name="thumbnails_width">64dp</dimen>
     <dimen name="thumbnails_height">64dp</dimen>
 
@@ -50,14 +48,12 @@
 
     <!--Text Size icon glovo-->
     <dimen name="max_height">150dp</dimen>
-
     <dimen name="text_width_down">75sp</dimen>
     <dimen name="text_height_down">25sp</dimen>
 
     <!--Icon Glovo-->
     <dimen name="icon_glovo_width">120sp</dimen>
     <dimen name="icon_glovo_height">70sp</dimen>
-
     <dimen name="elevation_card">4dp</dimen>
 
     <!--Text size main plag-->
@@ -65,9 +61,7 @@
 
     <!--Text Size icon glovo-->
     <dimen name="max_height_plag">320dp</dimen>
-
     <dimen name="corner_card">4dp</dimen>
-
     <dimen name="card_elevation">3dp</dimen>
 
     <!--Detail Activity-->

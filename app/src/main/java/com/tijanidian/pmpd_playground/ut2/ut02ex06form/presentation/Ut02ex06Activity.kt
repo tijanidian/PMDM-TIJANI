@@ -47,11 +47,9 @@ class Ut02ex06Activity : AppCompatActivity() {
         return when (item.itemId) {
             R.id.action_add -> {
                 if (supportActionBar?.title == getString(R.string.form_title)) {
-                    replaceFragment(binding.containerFragment.id, ListFragment.createInstance())
-                    supportActionBar?.title = getString(R.string.list_title)
+                    moveForm()
                 } else {
-                    replaceFragment(binding.containerFragment.id, FormFragment.createInstance())
-                    supportActionBar?.title = getString(R.string.form_title)
+                    moveList()
                 }
                 true
             }
@@ -67,8 +65,14 @@ class Ut02ex06Activity : AppCompatActivity() {
     }
 
 
-    private fun savePlayerFile() {
-        //viewModel.savePlayer()
+    private fun moveForm() {
+        replaceFragment(binding.containerFragment.id, ListFragment.createInstance())
+        supportActionBar?.title = getString(R.string.list_title)
+    }
+
+    private fun moveList() {
+        replaceFragment(binding.containerFragment.id, ListFragment.createInstance())
+        supportActionBar?.title = getString(R.string.list_title)
     }
 
 }
