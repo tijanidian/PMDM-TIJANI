@@ -1,10 +1,10 @@
-package com.tijanidian.pmpd_playground
+package com.tijanidian.pmpd_playground.pruebamvvm
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
 import androidx.appcompat.widget.AppCompatImageView
-import androidx.core.content.ContextCompat
+import com.tijanidian.pmpd_playground.R
 
 class MainActivity : AppCompatActivity() {
 

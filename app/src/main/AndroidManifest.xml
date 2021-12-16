@@ -9,18 +9,23 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.PMPDPlayGround">
+
         <activity
             android:name="com.tijanidian.ex02_alerts_recyclerview.presentation.DetailAlertActivity"
+
             android:exported="true" />
         <activity
-            android:name=".MainActivity"
+            android:name=".pruebamvvm.MainActivity"
             android:exported="true" />
         <activity
-            android:name="com.tijanidian.mvvm.ut2.UiActivity"
+
+            android:name="com.tijanidian.pmpd_playground.pruebamvvm.UiActivity"
             android:exported="true" />
         <activity
-            android:name="com.tijanidian.mvvm.ut2.UiTestGlovoActivity"
-            android:exported="true" />
+            android:name="com.tijanidian.pmpd_playground.pruebamvvm.UiTestGlovoActivity"
+            android:exported="true"/>
+           
+       
 
         <activity
             android:name="com.tijanidian.ex02_users_example.presentation.Ut02Ex02Activity"
@@ -32,6 +37,7 @@
         <activity
             android:name="com.tijanidian.ex02_alerts_recyclerview.presentation.Ut02AlertRecyclerActivity"
             android:exported="true">
+
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

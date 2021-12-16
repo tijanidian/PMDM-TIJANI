@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="@dimen/margin_left"
+        android:layout_marginTop="@dimen/padding_top"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/input_name"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="Nombre"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/input_last_name"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="Apellidos" />
+
+        <androidx.appcompat.widget.AppCompatSpinner
+            android:id="@+id/select_communities"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/padding_top"
+            android:entries="@array/communities_array" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/padding_top"
+            android:text="Sexo" />
+
+        <RadioGroup
+            android:id="@+id/gender_option"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent">
+
+
+            <RadioButton
+                android:id="@+id/radio_woman"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Mujer" />
+
+            <RadioButton
+                android:id="@+id/radio_man"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Varón" />
+
+
+        </RadioGroup>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/padding_top"
+            android:text="Demarcación" />
+
+        <CheckBox
+
+            android:id="@+id/ck_portero"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Portero" />
+
+        <CheckBox
+
+            android:id="@+id/ck_defensa"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Defensa" />
+
+        <CheckBox
+
+            android:id="@+id/ck_mediocentro"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mediocentro" />
+
+        <CheckBox
+
+            android:id="@+id/ck_delantero"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Delantero" />
+
+        <Button
+            android:id="@+id/action_save_player"
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:textColor="@color/white"
+            android:layout_gravity="center"
+            android:layout_marginTop="50dp"
+            android:text="guardar" />
+
+    </LinearLayout>
+</ScrollView>
